@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tools/git/git-submodule/","tags":["gardenEntry"],"created":"2024-01-15T10:55:03.154+08:00","updated":"2024-01-15T13:54:19.817+08:00"}
+{"dg-publish":true,"permalink":"/tools/git/git-submodule/","created":"2024-01-15T10:55:03.154+08:00","updated":"2024-01-15T14:19:14.541+08:00"}
 ---
 
 
