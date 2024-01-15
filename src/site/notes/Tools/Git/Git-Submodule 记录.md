@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tools/git/git-submodule/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/tools/git/git-submodule/","tags":["gardenEntry"],"created":"2024-01-15T10:55:03.154+08:00","updated":"2024-01-15T12:37:22.171+08:00"}
 ---
 
 
@@ -11,3 +11,4 @@ git submodule add https://github.com/chaconinc/DbConnector
 ```
 > By default, submodules will add the subproject into a directory named the same as the repository,  in this case “DbConnector”
 
+![Pasted image 20240115123720.png](/img/user/attachments/Pasted%20image%2020240115123720.png)
