@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tools/obsidian/digital-garden-excalidraw/","created":"2024-01-15T17:23:57.355+08:00","updated":"2024-01-16T10:26:03.522+08:00"}
+{"dg-publish":true,"permalink":"/tools/obsidian/digital-garden-excalidraw/","created":"2024-01-15T17:23:57.355+08:00","updated":"2024-01-16T10:29:40.677+08:00"}
 ---
 
 2024-1-16: 
@@ -15,5 +15,4 @@ digital-garden貌似无法直接渲染.excalidraw 文件 出现报错： Switch
 
 参考文章：https://forum.obsidian.md/t/publish-with-embedded-excalidraw-drawing/54288/3
 
-2024-1-15 目前存在的问题：
-excalidraw 无法绘制，
+![favicon.png](/img/user/attachments/favicon.png)
