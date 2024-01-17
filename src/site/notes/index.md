@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2024-01-15T10:28:16.424+08:00","updated":"2024-01-16T11:23:16.082+08:00"}
+{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2024-01-15T10:28:16.424+08:00","updated":"2024-01-17T15:43:57.685+08:00"}
 ---
 
 你好呀，欢迎访问本站点，本站点自用大于分享。如果能帮助到你，那更是极好的。
@@ -14,10 +14,10 @@
 - [ ] 【项目】类MarginNote Web 应用开发。
 
 ### 计划清单 - 短期（最多一个月）
-+ [ ] 造轮子 - 切片上传下载剥离开发（前端：vue+react 后端：nodejs/java）
-	+ [ ] vue版本前端
++ [ ] 造轮子 - [[Projects/大文件切片上传\|大文件切片上传]]
+	+ [x] vue版本前端
 	+ [ ] react 版本前端
-	+ [ ] Nodejs 版本后端
+	+ [x] Nodejs 版本后端
 	+ [ ] Java 版本后端
 + [ ] [[Tools/Obsidian/digital-garden self-hosting\|digital-garden self-hosting]]: digital garden 虽然套了cloudflare 代理，但是大陆访问速度还是有点慢，准备自建站点。这个站点应该包括如下功能
 	+ [ ] github webhook/runner 主动触发部署
