@@ -1,6 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/utils/utils-create-limit-promise-promise/","created":"2024-01-18T10:22:44.853+08:00","updated":"2024-01-18T10:35:12.689+08:00"}
+{"dg-publish":true,"permalink":"/frontend/utils/utils-create-limit-promise-promise/","created":"2024-01-18T10:22:44.853+08:00","updated":"2024-01-18T13:09:42.902+08:00"}
 ---
+
+#frontend #utils
 
 调用参考：
 ```ts
