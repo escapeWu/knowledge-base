@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tools/git/git-submodule/","created":"2024-01-15T10:55:03.154+08:00","updated":"2024-01-15T17:01:15.991+08:00"}
+{"dg-publish":true,"permalink":"/tools/git/git-submodule/","created":"2024-01-19T16:07:09.348+08:00","updated":"2024-01-15T17:01:15.000+08:00"}
 ---
 
 
