@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/web-storage/","created":"2024-01-18T10:57:45.873+08:00","updated":"2024-01-18T16:44:36.693+08:00"}
+{"dg-publish":true,"permalink":"/frontend/web-storage/","created":"2024-01-19T16:07:11.848+08:00","updated":"2024-01-18T16:44:36.000+08:00"}
 ---
 
 | 名称 | 存储空间 | 有效期 | **存放位置** | 作用域 |
