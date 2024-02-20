@@ -1,7 +1,6 @@
 ---
-{"dg-publish":true,"permalink":"/projects/ai-visual/tensor-rt/","created":"2024-01-22T12:01:49.394+08:00","updated":"2024-01-22T12:00:55.000+08:00"}
+{"dg-publish":true,"permalink":"/projects/ai-visual/tensor-rt/","created":"2024-01-30T15:05:17.000+08:00","updated":"2024-01-30T15:05:17.000+08:00"}
 ---
-
 
 
 + 入口：https://developer.nvidia.cn/tensorrt-download
@@ -10,6 +9,11 @@
 + 将tensorRT 解压复制到 `C:\Program Files\NVIDIA GPU Computing Toolkit`
 + 将目录下的lib 文件路径加入path
 	`C:\Program Files\NVIDIA GPU Computing Toolkit\TensorRT-8.4.3.1\lib`
+OR
+**tensorRT文件复制：**
++ 将TensorRT/lib下所有lib复制到cuda/v11.6/lib/x64下，
++ 将TensorRT/lib下所有dll复制到cuda/v11.6/bin下
++ ,将TensorRT/include下所有.h文件复制到cuda/v11.6/include下
 
 ==管理员Powershell== 在bin 目录下执行生成trt文件
 ```
