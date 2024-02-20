@@ -1,7 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/tools/python/python-file-operation/","created":"2024-01-24T13:50:34.281+08:00","updated":"2024-01-24T14:07:28.118+08:00"}
+{"dg-publish":true,"permalink":"/tools/python/python-file-operation/","created":"2024-02-01T10:49:24.000+08:00","updated":"2024-02-01T10:49:24.000+08:00"}
 ---
 
+#file
 ### 通过with open 读写文件
 ```python
 with open(label_file_path, 'w+') as file: 
