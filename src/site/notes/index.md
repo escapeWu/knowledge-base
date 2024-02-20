@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2024-01-19T16:07:11.987+08:00","updated":"2024-01-19T10:15:32.000+08:00"}
+{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2024-02-01T10:48:29.000+08:00","updated":"2024-02-20T10:36:40.690+08:00"}
 ---
 
-
+> 欢迎访问！这里是对所学所想知识的记录。文章可能内容存在纰漏，但它正在不断完善，请对它保持宽容
 ### 计划清单 - 长期
 - [ ] IELTS 学习中，希望2024结束 能达到7.0水平
 - [ ] 加密货币交易 with 深度学习，还未开始
@@ -12,12 +12,67 @@
 ### 计划清单 - 短期（最多一个月）
 + [ ] 大文件切分上传
 	+ [ ] react + Java 
-+ [ ] [[Tools/Obsidian/digital-garden self-hosting\|digital-garden self-hosting]]: digital garden 虽然套了cloudflare 代理，但是大陆访问速度还是有点慢，准备自建站点。这个站点应该包括如下功能
-	+ [ ] github webhook/runner 主动触发部署
-	+ [ ] 使用docker
 
-### Archived
-+ [x] [[Tools/Obsidian/digital-garden excalidraw usage\|digital-garden excalidraw usage]]: digital garden 的 excalidraw 出不来，我看官方写了支持它，需要研究下哪里有问题 
-+ [x] vue+nodejs [[Projects/file-chunk-upload-compose\|file-chunk-upload-compose]]
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/frontend/react/react/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+$<div class="markdown-embed-title">
+
+# React 索引
+
+</div>
+
+
+
+
++ [[frontend/React/custom hook - useHotKey\|custom hook - useHotKey]]
++ [[frontend/React/useReducer state manage组件状态管理\|useReducer state manage组件状态管理]]
+
+
+</div></div>
+
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/frontend/utils/index/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+$<div class="markdown-embed-title">
+
+# 前端工具库
+
+</div>
+
+
+
++ [[frontend/utils/utils-createLimitPromise 多promise并发控制\|utils-createLimitPromise 多promise并发控制]]
++ [[frontend/utils/utils - IndexedDB CRUD 简单封装\|utils - IndexedDB CRUD 简单封装]]
++ [[frontend/utils/utils - treeList to tree\|utils - treeList to tree]]
++ [[frontend/utils/utils-tree path find\|utils-tree path find]]
++ [[frontend/utils/utils-tree-map 树结构字段操作\|utils-tree-map 树结构字段操作]]
+
+
+</div></div>
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/tools/python/index/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+$<div class="markdown-embed-title">
+
+# Python Index
+
+</div>
+
+
+
+Python 作为效率工具常用的api 整理
++ 文件夹操作相关：[[Tools/Python/Python Folder Api操作\|Python Folder Api操作]]
++ 文件操作相关：[[Tools/Python/Python File Operation\|Python File Operation]]
+
+其他：
++ [[Tools/Python/coroutine and threading all in one\|coroutine and threading all in one]]
+
+</div></div>
+
+
+联系方式：brainqa@shancw.net
 
 
