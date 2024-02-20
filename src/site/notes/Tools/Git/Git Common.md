@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tools/git/git-common/","created":"2024-01-19T16:07:09.259+08:00","updated":"2024-01-16T17:58:06.000+08:00"}
+{"dg-publish":true,"permalink":"/tools/git/git-common/","created":"2024-01-31T10:14:08.000+08:00","updated":"2024-01-31T10:14:08.000+08:00"}
 ---
 
 
@@ -12,3 +12,13 @@ Github Token使用：
 ### 仓库源操作
 + git remote -v: 查看配置的源地址
 + git remote set-url `origin-name` `origin-url`： 更换某个源的地址
++ git clone -b branch_name repository_url  git clone指定分支
+
+
+### git 删除本地cache
+![Pasted image 20240125152649.png](/img/user/attachments/Pasted%20image%2020240125152649.png)
+git rm --cached .idea
+
+## 自建gitlab clone 时候提示  SSL certificate problem: unable to get local issuer certificate
+
+`git config --global http.sslVerify false`
