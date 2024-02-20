@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/tools/python/python-folder-api/","created":"2024-01-24T13:44:11.346+08:00","updated":"2024-01-24T13:50:11.675+08:00"}
+{"dg-publish":true,"permalink":"/tools/python/python-folder-api/","created":"2024-02-01T10:49:33.000+08:00","updated":"2024-02-01T10:49:33.000+08:00"}
 ---
 
-
+#file 
 + `os.path.exists(output_dir)`： 指定的目录是否存在，返回true/false
 + `os.path.mkdirs(path)`: 创建目录
 + `os.path.join(path1, path2, path3...)`： 创建出绝对路径地址
