@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/projects/ai-visual/yolov8-tensor-rt-c/","created":"2024-01-23T20:31:29.965+08:00","updated":"2024-01-23T20:31:15.000+08:00"}
+{"dg-publish":true,"permalink":"/projects/ai-visual/yolov8-tensor-rt-c/","created":"2024-01-30T13:10:22.000+08:00","updated":"2024-01-30T13:10:22.000+08:00"}
 ---
 
 ###  仓库地址
@@ -38,15 +38,14 @@
 Visual Studio 2019 Professional（专业版）：**NYWVH-HT4XC-R2WYW-9Y3CM-X4V3Y**
 
 **tensorRT文件复制：**
-+ 将TensorRT/lib下所有lib复制到cuda/v10.2/lib/x64下，
-+ 将TensorRT/lib下所有dll复制到cuda/v10.2/bin下
-+ ,将TensorRT/include下所有.h文件复制到cuda/v10.2/include下
++ 将TensorRT/lib下所有lib复制到cuda/v11.6/lib/x64下，
++ 将TensorRT/lib下所有dll复制到cuda/v11.6/bin下
++ ,将TensorRT/include下所有.h文件复制到cuda/v11.6/include下
 **CMAKELists.txt 修改：**
 + **Opencv**：
 + **Tensorrt**：
 + 修改`arch=compute_75;code=sm_75`，参考[https://developer.nvidia.com/zh-cn/cuda-gpus](https://developer.nvidia.com/zh-cn/cuda-gpus)，
+	+ ==此处的算力相同的型号，trt文件可以共用==，否则，需要在对应机器上手动执行如下指令，手动生成trt文件，具体参考[[Projects/ai-visual/tensorRT 安装使用\|tensorRT 安装使用]]
+	+ 
 
 
-```
-trtexec --onnx=best.onnx --saveEngine=0123s.trt --fp16
-```
