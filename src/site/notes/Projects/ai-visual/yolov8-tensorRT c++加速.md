@@ -1,10 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/projects/ai-visual/yolov8-tensor-rt-c/","created":"2024-01-30T13:10:22.000+08:00","updated":"2024-01-30T13:10:22.000+08:00"}
+{"dg-publish":true,"permalink":"/projects/ai-visual/yolov8-tensor-rt-c/","created":"2024-01-23T20:31:29.965+08:00","updated":"2024-02-21T11:21:50.574+08:00"}
 ---
 
-###  仓库地址
+##  仓库地址
 - [Monday-Leo](https://github.com/Monday-Leo)/[YOLOv8_Tensorrt](https://github.com/Monday-Leo/YOLOv8_Tensorrt)
-### 环境要求
+## 环境要求
 + **Cuda 11.6**
 + **onnx 1.12.0**: `pip install`
 + **Tensorrt 8.4.3(TensorRT 8.4 GA Update 2)
@@ -17,9 +17,9 @@
 - opencv: 
 	- PATH: `E:\Program Files\opencv\build\x64\vc15\bin`
 
-### Quick Start
+## Quick Start
 
-#### 环境构建
+### 环境构建
 1. 创建conda环境 `conda create -n yolov8-tensorrt python=3.10`
 2. 使用conda环境 `conda activate yolov8-tensorrt `
 3. 安装python packages：
@@ -29,13 +29,16 @@
 	# download offical weights(".pt" file)
 	https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt
 	```
-#### 模型导出
+
+### 模型导出
 + `yolo mode=export model=yolov8n.pt format=onnx dynamic=False`
 + `python v8_transform.py yolov8n.onnx`
 + tensorRT bin 目录==管理员Powershell== 执行: `trtexec --onnx=yolov8n.transd.onnx --saveEngine=yolov8n_fp16.trt --fp16`
-#### vs c++项目构建（cmake）
+
+### vs c++项目构建（cmake）
 >Visual Studio 2019 Enterprise（企业版）：**BF8Y8-GN2QH-T84XB-QVY3B-RC4DF**
 Visual Studio 2019 Professional（专业版）：**NYWVH-HT4XC-R2WYW-9Y3CM-X4V3Y**
+
 
 **tensorRT文件复制：**
 + 将TensorRT/lib下所有lib复制到cuda/v11.6/lib/x64下，
