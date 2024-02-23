@@ -1,11 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2024-02-01T10:48:29.000+08:00","updated":"2024-02-20T10:36:40.690+08:00"}
+{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2024-02-20T10:36:45.638+08:00","updated":"2024-02-21T09:27:02.057+08:00"}
 ---
 
 > 欢迎访问！这里是对所学所想知识的记录。文章可能内容存在纰漏，但它正在不断完善，请对它保持宽容
 ### 计划清单 - 长期
 - [ ] IELTS 学习中，希望2024结束 能达到7.0水平
-- [ ] 加密货币交易 with 深度学习，还未开始
 - [ ] 前端面试题
 - [ ] 【项目】类MarginNote Web 应用开发。
 
@@ -21,6 +20,7 @@ $<div class="markdown-embed-title">
 # React 索引
 
 </div>
+
 
 
 
@@ -46,8 +46,8 @@ $<div class="markdown-embed-title">
 + [[frontend/utils/utils-createLimitPromise 多promise并发控制\|utils-createLimitPromise 多promise并发控制]]
 + [[frontend/utils/utils - IndexedDB CRUD 简单封装\|utils - IndexedDB CRUD 简单封装]]
 + [[frontend/utils/utils - treeList to tree\|utils - treeList to tree]]
-+ [[frontend/utils/utils-tree path find\|utils-tree path find]]
 + [[frontend/utils/utils-tree-map 树结构字段操作\|utils-tree-map 树结构字段操作]]
++ [[frontend/utils/utils-tree path find\|utils-tree path find]]
 
 
 </div></div>
