@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2024-02-20T10:36:45.638+08:00","updated":"2024-02-21T09:27:02.057+08:00"}
+{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2024-02-20T10:36:45.638+08:00","updated":"2024-02-26T15:56:04.749+08:00"}
 ---
 
 > 欢迎访问！这里是对所学所想知识的记录。文章可能内容存在纰漏，但它正在不断完善，请对它保持宽容
@@ -72,6 +72,19 @@ Python 作为效率工具常用的api 整理
 
 </div></div>
 
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+$<div class="markdown-embed-title">
+
+# 后端
+
+</div>
+
+
++ [[backend/jabba管理jdk-windows\|jabba管理jdk-windows]]
+
+</div></div>
 
 联系方式：brainqa@shancw.net
 
