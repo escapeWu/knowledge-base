@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/interview/html-and-css/","created":"2024-02-21T11:16:32.135+08:00","updated":"2024-02-26T17:51:26.081+08:00"}
+{"dg-publish":true,"permalink":"/interview/html-and-css/","created":"2024-02-21T11:16:32.135+08:00","updated":"2024-02-28T16:37:54.385+08:00"}
 ---
 
 #### 常见元素种类有哪些？
@@ -73,7 +73,10 @@ box-sizing: content-box|border-box|inherit:
 + 类选择器 `.one`
 + 标签选择器 `div`
 + 后代选择器 `#box div` 空格
+	+ 作用于**所有子后代元素**
 + 子选择器 `#box>ul` >
+	+ 用于选择指定标签元素的**第一代子元素**
+	+ [link: 后端和子选择器的区别详解](https://blog.csdn.net/u012110719/article/details/41171517)
 + 相邻同胞选择器`.one+.two` +
 + 群组选择器 `div,p` ,
 **伪类**：
@@ -86,8 +89,9 @@ box-sizing: content-box|border-box|inherit:
 **伪元素**：
 + :before 选择器在被选元素的内容前面插入内容
 + :after 选择器在被选元素的内容后面插入内容
- CSS3 新增
-**伪类选择器**：
+**选择器优先级？：**
+内联 > ID选择器 > 类选择器 > 标签选择器
+**CSS3 新增伪类选择器**：
 1. `:first-of-type`：选择一组同级元素中其类型的第一个元素。
 	例子：`p:first-of-type` 会选择同级的段落元素中的第一个段落。
 2. `:last-of-type`：选择一组同级元素中其类型的最后一个元素。
@@ -117,9 +121,17 @@ box-sizing: content-box|border-box|inherit:
 **层次选择器**（p~ul）
 选择前面有p元素的每个ul元素
 **属性选择器**：
-1. `[attribute*=value]`：选择attribute属性值包含value的所有元素。 这个选择器会选择具有指定属性，并且属性值中包含给定值的所有元素。 例子：`input[type*="text"]` 会选择所有 `type` 属性值包含 "text" 的输入元素，比如 `<input type="text">`、`<input type="email">`。
-2. `[attribute^=value]`：选择attribute属性开头为value的所有元素。 这个选择器会选择具有指定属性，并且属性值以给定值开头的所有元素。 例子：`a[href^="https://"]` 会选择所有 `href` 属性值以 "https://" 开头的链接元素。
-3. `[attribute$=value]`：选择attribute属性结尾为value的所有元素。 这个选择器会选择具有指定属性，并且属性值以给定值结尾的所有元素。 例子：`img[src$=".png"]` 会选择所有 `src` 属性值以 ".png" 结尾的图像元素。
+```css
+[attribute*=value]：选择attribute属性值包含value的所有元素
+[attribute^=value]：选择attribute属性开头为value的所有元素
+[attribute$=value]：选择attribute属性结尾为value的所有元素
+input[type="text"] { 
+	width:150px; 
+	display:block; 
+	margin-bottom:10px; 
+	background-color:yellow;
+}
+```
 <!--ID: 1708501161608-->
 
 #### 什么是margin 塌陷，如何避免？
@@ -377,3 +389,58 @@ container.style.color = 'red'
 ...（省略了许多类似的后续操作）
 container.style.display = 'block'
 ```
+
+#### 什么是响应式设计？如何做？
+响应式设计的基本原理是通过媒体查询检测不同的设备屏幕尺寸做处理，为了处理移动端，页面头部必须有`meta`声明`viewport`
+```css
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no”>
+```
+属性对应如下：
+- width=device-width: 是自适应手机屏幕的尺寸宽度
+- maximum-scale:是缩放比例的最大值
+- inital-scale:是缩放的初始化
+- user-scalable:是用户的可以缩放的操作
+实现响应式布局的方式有如下：
+- 媒体查询
+- 百分比
+- vw/vh
+- rem
+<!--ID: 1709108207591-->
+#### css 选择器有哪些可以继承：
+字体系列属性:
+```css
+font:组合字体
+font-family:规定元素的字体系列
+font-weight:设置字体的粗细
+font-size:设置字体的尺寸
+font-style:定义字体的风格
+font-variant:偏大或偏小的字体
+```
+文本：
+```css
+font:组合字体
+font-family:规定元素的字体系列
+font-weight:设置字体的粗细
+font-size:设置字体的尺寸
+font-style:定义字体的风格
+font-variant:偏大或偏小的字体
+```
+元素可见性：
+```css
+visibility
+```
+表格布局属性
+```css
+caption-side：定位表格标题位置
+border-collapse：合并表格边框
+border-spacing：设置相邻单元格的边框间的距离
+empty-cells：单元格的边框的出现与消失
+table-layout：表格的宽度由什么决定
+```
+列表属性
+```css
+list-style-type：文字前面的小点点样式
+list-style-position：小点点位置
+list-style：以上的属性可通过这属性集合
+```
+<!--ID: 1709109474341-->
