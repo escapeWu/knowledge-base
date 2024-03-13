@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/is-formdata-necessary-in-http-file-upload/","created":"2024-01-19T16:07:11.697+08:00","updated":"2024-01-17T15:44:43.000+08:00"}
+{"dg-publish":true,"permalink":"/frontend/is-formdata-necessary-in-http-file-upload/","created":"2024-01-19T16:07:11.697+08:00","updated":"2024-02-29T11:23:07.990+08:00"}
 ---
 
 ### fetch API
@@ -34,7 +34,6 @@ const onSelectFile = () => upload(input.files[0]);
 // It will be triggered when a file will be selected
 input.addEventListener('change', onSelectFile, false);
 ```
-一个可运行的例子：[github shancw/vue-sandbox feat:大文件切分上传](https://github.com/shancwovo/vue-sandbox/commit/9e976da3910f2a0c68e45cbcb57c5302c29e021d)
 
 ### AJAX
 当使用ajax 及相关库如axios 进行文件上传，formData 是必须的
