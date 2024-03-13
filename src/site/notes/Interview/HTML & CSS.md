@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/interview/html-and-css/","created":"2024-02-21T11:16:32.135+08:00","updated":"2024-02-28T16:37:54.385+08:00"}
+{"dg-publish":true,"permalink":"/interview/html-and-css/","created":"2024-02-21T11:16:32.135+08:00","updated":"2024-03-08T10:55:29.293+08:00"}
 ---
 
 #### 常见元素种类有哪些？
@@ -418,12 +418,15 @@ font-variant:偏大或偏小的字体
 ```
 文本：
 ```css
-font:组合字体
-font-family:规定元素的字体系列
-font-weight:设置字体的粗细
-font-size:设置字体的尺寸
-font-style:定义字体的风格
-font-variant:偏大或偏小的字体
+text-indent：文本缩进
+text-align：文本水平对齐
+text-shadow：设置文本阴影
+line-height：行高
+word-spacing：增加或减少单词间的空白（即字间隔）
+letter-spacing：增加或减少字符间的空白（字符间距）
+text-transform：控制文本大小写
+direction：规定文本的书写方向
+color：文本颜色
 ```
 元素可见性：
 ```css
