@@ -1,16 +1,31 @@
 ---
-{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2024-02-20T10:36:45.638+08:00","updated":"2024-02-26T15:56:04.749+08:00"}
+{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2024-02-20T10:36:45.638+08:00","updated":"2024-03-14T13:26:45.526+08:00"}
 ---
 
 > 欢迎访问！这里是对所学所想知识的记录。文章可能内容存在纰漏，但它正在不断完善，请对它保持宽容
+
+
+联系方式：
+邮箱：<a href="mailto:brainqa@shancw.net"> brainqa@shancw.net </a>
+
 ### 计划清单 - 长期
 - [ ] IELTS 学习中，希望2024结束 能达到7.0水平
-- [ ] 前端面试题
-- [ ] 【项目】类MarginNote Web 应用开发。
+- [ ] 【项目】类MarginNote Web 应用开发
 
-### 计划清单 - 短期（最多一个月）
-+ [ ] 大文件切分上传
-	+ [ ] react + Java 
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/translate-index/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+$<div class="markdown-embed-title">
+
+# 文章翻译
+
+</div>
+
+
+
++ [[Tools/Docker/docker Networking in Compose\|docker Networking in Compose]] - 3/14/2024
+
+</div></div>
+
 
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/frontend/react/react/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
@@ -84,40 +99,10 @@ $<div class="markdown-embed-title">
 
 
 + [[backend/jabba管理jdk-windows\|jabba管理jdk-windows]]
-
-
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/backend/db/index/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-$<div class="markdown-embed-title">
-
-# db
-
-</div>
-
-
-
 + [[backend/db/liquibase lock删除\|liquibase lock删除]]
-
-</div></div>
-
-
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
-
-$<div class="markdown-embed-title">
-
-# Utils
-
-</div>
-
-
 + [[copyProperties skip null \| spring中复制非空对象属性值]]
-+ 
-
-</div></div>
 
 
 </div></div>
-
-联系方式：brainqa@shancw.net
 
 
