@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/backend/utils/copy-properties-skip-null/","created":"2024-03-13T14:34:26.059+08:00","updated":"2024-03-13T14:39:47.256+08:00"}
+{"dg-publish":true,"permalink":"/backend/utils/copy-properties-skip-null/","created":"2024-03-13T14:39:47.000+08:00","updated":"2024-03-13T14:39:47.000+08:00"}
 ---
 
 Spring 自带的BeanUtils copyProperties 不支持非null属性值复制，我们可以自己写一个util进行处理
