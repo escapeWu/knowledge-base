@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/backend/jabba-jdk-windows/","created":"2024-02-26T15:50:26.838+08:00","updated":"2024-02-26T15:55:34.094+08:00"}
+{"dg-publish":true,"permalink":"/backend/jabba-jdk-windows/","created":"2024-02-26T15:55:34.000+08:00","updated":"2024-02-26T15:55:34.000+08:00"}
 ---
 
 powershell 管理员运行:
