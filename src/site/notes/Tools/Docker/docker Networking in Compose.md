@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tools/docker/docker-networking-in-compose/","created":"2024-03-14T13:18:41.000+08:00","updated":"2024-03-14T13:18:41.000+08:00"}
+{"dg-publish":true,"permalink":"/tools/docker/docker-networking-in-compose/","created":"2024-03-14T10:01:34.372+08:00","updated":"2024-03-14T13:18:41.421+08:00"}
 ---
 
 > 该文章是 docker 官网 Manual - Networking in Compose 章节翻译
