@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/react/custom-hook-use-hot-key/","created":"2024-01-25T13:14:01.000+08:00","updated":"2024-01-25T13:16:04.034+08:00"}
+{"dg-publish":true,"permalink":"/frontend/react/custom-hook-use-hot-key/","created":"2024-01-26T10:25:27.621+08:00","updated":"2024-01-25T13:16:04.000+08:00"}
 ---
 
 #react #hook
