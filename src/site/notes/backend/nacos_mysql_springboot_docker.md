@@ -1,7 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/backend/nacos-mysql-springboot-docker/","created":"2024-03-14T17:04:51.000+08:00","updated":"2024-03-14T17:04:51.000+08:00"}
+{"dg-publish":true,"permalink":"/backend/nacos-mysql-springboot-docker/","created":"2024-03-14T16:07:47.112+08:00","updated":"2024-03-28T11:29:55.242+08:00"}
 ---
 
+#docker #nacos #spring 
 本文介绍了在docker 环境中，如何正确连同nacos 以及mysql。需要的前置知识请看[[Tools/Docker/docker Networking in Compose\|docker Networking in Compose]]
 
 **STEP 1**
