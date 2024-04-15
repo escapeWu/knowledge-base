@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/utils/utils-tree-list-to-tree/","created":"2024-01-26T10:25:27.934+08:00","updated":"2024-01-25T13:18:57.000+08:00"}
+{"dg-publish":true,"permalink":"/frontend/utils/utils-tree-list-to-tree/","created":"2024-04-03T10:25:54.000+08:00","updated":"2024-04-03T10:25:54.000+08:00"}
 ---
 
 #utils #tree
