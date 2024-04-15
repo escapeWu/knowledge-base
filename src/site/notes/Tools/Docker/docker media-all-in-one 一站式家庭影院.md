@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tools/docker/docker-media-all-in-one/","created":"2024-01-26T10:25:27.253+08:00","updated":"2024-01-25T13:11:07.000+08:00"}
+{"dg-publish":true,"permalink":"/tools/docker/docker-media-all-in-one/","created":"2024-04-03T10:25:47.000+08:00","updated":"2024-04-03T10:25:47.000+08:00"}
 ---
 
 #docker 
