@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/utils/utils-create-limit-promise-promise/","created":"2024-04-03T10:25:54.000+08:00","updated":"2024-04-03T10:25:54.000+08:00"}
+{"dg-publish":true,"permalink":"/frontend/utils/utils-create-limit-promise-promise/","created":"2024-04-03T10:25:54.000+08:00","updated":"2024-04-15T16:45:17.935+08:00"}
 ---
 
 #frontend #utils
@@ -21,7 +21,7 @@ createLimitPromiseV2(2, asyncLoadFnList, 4)
 
 ```ts
 // promise 并发控制  
-function createLimitPromise(size, tobeExecuteAsyncFnList, retryTime = 3) {  
+function createLimitPromiseV2(size, tobeExecuteAsyncFnList, retryTime = 3) {  
   const innerRequests = tobeExecuteAsyncFnList.map(request => ({  
     requestStatus: 'NOT_START', // PENDING RESOLVE REJECT  
     success: false,  
@@ -38,11 +38,12 @@ function createLimitPromise(size, tobeExecuteAsyncFnList, retryTime = 3) {
       const requestItem = getNextRequest(innerRequests);  
       if(!requestItem) return;  
       doFetch(requestItem).then(() => {  
-        // 所有请求处理完毕后（包括失败的请求），获取response，并返回。此处可自行修改
         if(getProcessedRequestNum(innerRequests) === innerRequests.length) {  
           resolve(innerRequests.map(item => item.response))  
         }  
-        run()  
+        setTimeout(() => {  
+          run()  
+        })  
       });  
     }  
     //没有触发过请求 或者 重试小于3次  
