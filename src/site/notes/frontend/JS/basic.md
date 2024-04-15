@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/js/basic/","created":"2024-02-29T10:19:09.961+08:00","updated":"2024-03-13T11:11:34.242+08:00"}
+{"dg-publish":true,"permalink":"/frontend/js/basic/","created":"2024-04-03T10:25:53.000+08:00","updated":"2024-04-03T10:25:53.000+08:00"}
 ---
 
 #### 原始值与引用值的定义？
