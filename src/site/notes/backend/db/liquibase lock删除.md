@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/backend/db/liquibase-lock/","created":"2024-03-13T13:18:55.985+08:00","updated":"2024-03-13T13:24:00.872+08:00"}
+{"dg-publish":true,"permalink":"/backend/db/liquibase-lock/","created":"2024-04-03T10:25:52.000+08:00","updated":"2024-04-03T10:25:52.000+08:00"}
 ---
 
 当处于表设计阶段，liquibase 表设计有问题，需要更新为最新表结构。可以通过如下方式处理：
