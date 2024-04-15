@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/projects/ai-visual/yolov8-tensor-rt-c/","created":"2024-01-23T20:31:29.965+08:00","updated":"2024-02-21T11:21:50.574+08:00"}
+{"dg-publish":true,"permalink":"/projects/ai-visual/yolov8-tensor-rt-c/","created":"2024-04-03T10:25:47.000+08:00","updated":"2024-04-03T10:25:47.000+08:00"}
 ---
 
 ##  仓库地址
