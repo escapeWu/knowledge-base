@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/js/file-reader-api-common-usage/","created":"2024-01-19T16:07:11.692+08:00","updated":"2024-01-17T10:55:05.000+08:00"}
+{"dg-publish":true,"permalink":"/frontend/js/file-reader-api-common-usage/","created":"2024-04-03T10:25:53.000+08:00","updated":"2024-04-03T10:25:53.000+08:00"}
 ---
 
 #frontend #browser #FileReader
