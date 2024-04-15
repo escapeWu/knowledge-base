@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/backend/spring-mybatis/","created":"2024-03-24T19:30:38.049+08:00","updated":"2024-03-28T11:30:17.566+08:00"}
+{"dg-publish":true,"permalink":"/backend/spring-mybatis/","created":"2024-04-03T10:25:53.000+08:00","updated":"2024-04-03T10:25:53.000+08:00"}
 ---
 
 #mybatis #spring 
