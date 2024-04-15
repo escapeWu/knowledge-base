@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/utils/utils-indexed-db-crud/","created":"2024-01-19T16:07:11.493+08:00","updated":"2024-01-25T15:31:45.000+08:00"}
+{"dg-publish":true,"permalink":"/frontend/utils/utils-indexed-db-crud/","created":"2024-04-03T10:25:54.000+08:00","updated":"2024-04-03T10:25:54.000+08:00"}
 ---
 
 
