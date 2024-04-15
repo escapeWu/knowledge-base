@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/projects/ai-visual/aimbot-install-guide/","created":"2024-02-20T10:27:36.362+08:00","updated":"2024-02-18T13:54:53.000+08:00"}
+{"dg-publish":true,"permalink":"/projects/ai-visual/aimbot-install-guide/","created":"2024-04-03T10:25:47.000+08:00","updated":"2024-04-03T10:25:47.000+08:00"}
 ---
 
 > 本教程仅支持Nvidia 显卡，Amd 显卡不支持。
