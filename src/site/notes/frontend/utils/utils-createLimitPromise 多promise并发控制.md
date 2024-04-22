@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/utils/utils-create-limit-promise-promise/","created":"2024-04-03T10:25:54.000+08:00","updated":"2024-04-15T16:45:17.935+08:00"}
+{"dg-publish":true,"permalink":"/frontend/utils/utils-create-limit-promise-promise/"}
 ---
 
 #frontend #utils
