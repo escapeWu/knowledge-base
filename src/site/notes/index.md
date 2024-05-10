@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2024-04-22T10:55:21.340+08:00","updated":"2024-04-22T13:56:30.000+08:00"}
+{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2024-04-22T10:55:21.340+08:00","updated":"2024-05-10T10:57:13.231+08:00"}
 ---
 
 > 欢迎访问！这里是对所学所想知识的记录。文章可能内容存在纰漏，但它正在不断完善，请对它保持宽容
@@ -9,8 +9,8 @@
 邮箱：<a href="mailto:brainqa@shancw.net"> brainqa@shancw.net </a>
 
 ### 计划清单 - 长期
-- [ ] IELTS 学习中，希望2024结束 能达到7.0水平
-- [ ] [[PDF-Notes\|PDF-Notes]]
+- [ ] IELTS 学习中，希望2024结束 读写能达到7.0水平
+- [ ] [[Projects/PDF_Notes/dev-log （开发手记）\|pdf-notes]]
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/translate-index/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
@@ -104,11 +104,13 @@ $<div class="markdown-embed-title">
 + [[backend/nacos_mysql_springboot_docker\|docker下配置nacos以及spring网络环境]]
 + [[backend/maven/maven 安装 -win - 翻译\|maven 安装 -win - 翻译]]
 utils：
- + [[copyProperties skip null \| spring中复制非空对象属性值]]
  + [[backend/spring + mybatis 自动化更新时间字段\|spring + mybatis 自动化更新时间字段]]
- + [[java enum-字符串 \| spring项目中enum输出为字符串]] 
  + [[backend/utils/java-thread-pool\|java 线程池处理并发任务]]
  + [[backend/utils/Java-execute-bash 指令\|Java-execute-bash 指令]]
+ + [[copyProperties skip null \| spring中复制非空对象属性]]
+ + [[java enum-字符串 \| spring项目中enum输出字符串]]
+
+
 
 </div></div>
 
