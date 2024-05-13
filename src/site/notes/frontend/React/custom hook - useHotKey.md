@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/react/custom-hook-use-hot-key/","created":"2024-04-10T17:36:40.000+08:00","updated":"2024-05-13T17:31:22.204+08:00"}
+{"dg-publish":true,"permalink":"/frontend/react/custom-hook-use-hot-key/","created":"2024-04-10T17:36:40.000+08:00","updated":"2024-05-13T17:49:17.305+08:00"}
 ---
 
 #react #hook
@@ -7,9 +7,9 @@
 
 react 自定义 hook，实现浏览器监听特定组合按键，比如 `ctrl+ m`, `ctrl + k + j + a + b`，0 依赖。点击[在线预览: codesandbox](https://codesandbox.io/s/chakraui-ts-components-forked-iy9nkq?file=/src/index.tsx)
 
-<!-- more -->
-<iframe  src="https://stackblitz.com/edit/unicorn-utterances-unicorn-utterances-unnsup?file=src%2Fmain.jsx" width="100%"  height="500px" crossorigin="anonymous"  />
+<iframe loading="lazy" src="https://stackblitz.com/github/unicorn-utterances/unicorn-utterances/tree/main/content/crutchcorn/collections/react-beyond-the-render/posts/what-is-reconciliation-and-the-vdom/react-list-key?template=node&amp;embed=1&amp;file=src%2Fmain.jsx" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin" style="height: 500px; width: 100%"></iframe>
 
+<!-- more -->
 ## 使用：
 
 ```js
