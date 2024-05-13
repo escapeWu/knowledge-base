@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2024-04-22T10:55:21.340+08:00","updated":"2024-05-10T10:57:13.231+08:00"}
+{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2024-04-22T10:55:21.340+08:00","updated":"2024-05-13T13:19:18.412+08:00"}
 ---
 
 > 欢迎访问！这里是对所学所想知识的记录。文章可能内容存在纰漏，但它正在不断完善，请对它保持宽容
@@ -115,3 +115,20 @@ utils：
 </div></div>
 
 
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+$<div class="markdown-embed-title">
+
+# 算法题
+
+</div>
+
+
++ [[algo&leetcode/26删除有序数组中的重复项\|删除有序数组中的重复项]]
++ [[algo&leetcode/121best-time-to-buy-and-sell-stock\|买卖股票]]
++ [[algo&leetcode/150merge-sorted-array\|合并有序数组]]
++ [[algo&leetcode/189轮转数组\|轮转数组]]
++ 
+
+</div></div>
