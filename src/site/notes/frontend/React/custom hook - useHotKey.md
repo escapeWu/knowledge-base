@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/react/custom-hook-use-hot-key/","created":"2024-04-10T17:36:40.000+08:00","updated":"2024-04-10T17:36:40.000+08:00"}
+{"dg-publish":true,"permalink":"/frontend/react/custom-hook-use-hot-key/","created":"2024-04-10T17:36:40.000+08:00","updated":"2024-05-13T17:16:38.185+08:00"}
 ---
 
 #react #hook
@@ -8,7 +8,7 @@
 react 自定义 hook，实现浏览器监听特定组合按键，比如 `ctrl+ m`, `ctrl + k + j + a + b`，0 依赖。点击[在线预览: codesandbox](https://codesandbox.io/s/chakraui-ts-components-forked-iy9nkq?file=/src/index.tsx)
 
 <!-- more -->
-
+<iframe  src="https://stackblitz.com/edit/unicorn-utterances-unicorn-utterances-unnsup?file=src%2Fmain.jsx"  />
 ## 使用：
 
 ```js
