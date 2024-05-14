@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/algo-and-leetcode/list/","created":"2024-05-13T13:17:09.640+08:00","updated":"2024-05-14T11:05:34.819+08:00"}
+{"dg-publish":true,"permalink":"/algo-and-leetcode/list/","created":"2024-05-13T13:17:09.640+08:00","updated":"2024-05-14T11:13:02.226+08:00"}
 ---
 
 + [[algo&leetcode/26删除有序数组中的重复项\|删除有序数组中的重复项]]
@@ -7,26 +7,20 @@
 + [[algo&leetcode/150merge-sorted-array\|合并有序数组]]
 + [[algo&leetcode/189轮转数组\|轮转数组]]
 
-<button id="loadIframeBtn">加载 stackblitz demo</button>
-<iframe 
-	 id="lazyIframe"
-	 loading="lazy"  
-	 src=" "
-	 sandbox=" "
-	 style="height:500px;width:100%;display:none" 
->
-</iframe>
+<button id="loadIframeBtn" style="width: 100%">加载 stackblitz demo</button>
+<div id="framewrapper"></div>
 
-<style>
-#loadIframeBtn:hover { background-color: #e67e22; color: #fff; transition: all ease-in-out 0.5s}
-#loadIframeBtn { width: 100%; }
-</style>
 <script>
     document.getElementById('loadIframeBtn').addEventListener('click', function() {
-        var iframe = document.getElementById('lazyIframe');
-        iframe.src = 'https://stackblitz.com/edit/daisyui-react-vite-hbar4g?file=src%2FApp.jsx'; // 在这里替换为实际的 URL
-        iframe.sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-        iframe.style.display = 'block';
+        var framewrapper = document.getElementById('framewrapper');
+        var iframe = document.createElement('iframe'); 
+	// 设置 iframe 属性
+	iframe.src = 'https://stackblitz.com/edit/daisyui-react-vite-hbar4g?file=src%2FApp.jsx';
+	iframe.sandbox = 'allow-modals allow-forms allow-popups allow-scripts allow-same-origin';
+	iframe.style.height = '500px';
+	iframe.style.width = '100%';
+	iframe.style.display = 'block';
+	framewrapper.appendChild(iframe)
     });
 </script>
 
