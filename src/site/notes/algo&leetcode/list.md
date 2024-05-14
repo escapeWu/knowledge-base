@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/algo-and-leetcode/list/","created":"2024-05-13T13:17:09.640+08:00","updated":"2024-05-14T10:33:08.490+08:00"}
+{"dg-publish":true,"permalink":"/algo-and-leetcode/list/","created":"2024-05-13T13:17:09.640+08:00","updated":"2024-05-14T10:48:56.719+08:00"}
 ---
 
 + [[algo&leetcode/26删除有序数组中的重复项\|删除有序数组中的重复项]]
@@ -7,13 +7,41 @@
 + [[algo&leetcode/150merge-sorted-array\|合并有序数组]]
 + [[algo&leetcode/189轮转数组\|轮转数组]]
 
-<button id="loadIframeBtn">点击加载内容</button>
-<iframe id="lazyIframe" width="600" height="400" style="display:none;"></iframe>
+<div>
+<button style="border-radius: 5px; width: 100%;font-weight: bold; background-color: " id="loadIframeBtn">加载 stackblitz demo</button>
+<iframe 
+
+     loading="lazy" 
+
+     src=""
+
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin" 
+
+     style="height: 500px; width: 100%; display: none" 
+
+>
+
+</iframe>
+
+</div>
+
+<iframe id="lazyIframe" width="600" height="400" style="display:none;"></iframe>
+<style>
+#loadIframeBtn:hover { background-color: #e67e22; color: #fff; transition: all ease-in-out 0.5s}
+</style>
 
 <script>
-    document.getElementById('loadIframeBtn').addEventListener('click', function() {
-        var iframe = document.getElementById('lazyIframe');
-        iframe.src = 'https://example.com'; // 在这里替换为实际的 URL
-        iframe.style.display = 'block';
-    });
+
+    document.getElementById('loadIframeBtn').addEventListener('click', function() {
+
+        var iframe = document.getElementById('lazyIframe');
+
+        iframe.src = 'https://stackblitz.com/edit/daisyui-react-vite-hbar4g?file=src%2FApp.jsx'; // 在这里替换为实际的 URL
+
+        iframe.style.display = 'block';
+
+    });
+
 </script>
+
+
