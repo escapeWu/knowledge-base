@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/algo-and-leetcode/list/","created":"2024-05-13T13:17:09.640+08:00","updated":"2024-05-14T10:57:35.897+08:00"}
+{"dg-publish":true,"permalink":"/algo-and-leetcode/list/","created":"2024-05-13T13:17:09.640+08:00","updated":"2024-05-14T10:58:52.303+08:00"}
 ---
 
 + [[algo&leetcode/26删除有序数组中的重复项\|删除有序数组中的重复项]]
@@ -11,7 +11,9 @@
 	<button id="loadIframeBtn" style="border-radius:5px;width:100%;font-weight:bold;" id="loadIframeBtn">加载 stackblitz demo</button>
 	<iframe 
 	     loading="lazy"  
-	     style="height:500px;width:100%;display: none" 
+	     src=""
+	     sandbox=""
+	     style="height:500px;width:100%;display:none" 
 >
 	</iframe>
 </div>
