@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/algo-and-leetcode/list/","created":"2024-05-13T13:17:09.640+08:00","updated":"2024-05-14T11:27:11.655+08:00"}
+{"dg-publish":true,"permalink":"/algo-and-leetcode/list/","created":"2024-05-13T13:17:09.640+08:00","updated":"2024-05-14T11:29:08.420+08:00"}
 ---
 
 + [[algo&leetcode/26删除有序数组中的重复项\|删除有序数组中的重复项]]
@@ -18,7 +18,7 @@
         var frame = document.getElementById('frame');
 	// 设置 iframe 属性
 	frame.src = 'https://stackblitz.com/edit/daisyui-react-vite-hbar4g?file=src%2FApp.jsx';
-	frame.style.display=“block"
+	frame.style.display="block"
     });
 </script>
 
