@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/algo-and-leetcode/list/","created":"2024-05-13T13:17:09.640+08:00","updated":"2024-05-14T11:01:08.139+08:00"}
+{"dg-publish":true,"permalink":"/algo-and-leetcode/list/","created":"2024-05-13T13:17:09.640+08:00","updated":"2024-05-14T11:02:17.875+08:00"}
 ---
 
 + [[algo&leetcode/26删除有序数组中的重复项\|删除有序数组中的重复项]]
@@ -10,8 +10,8 @@
 <button id="loadIframeBtn" id="loadIframeBtn">加载 stackblitz demo</button>
 <iframe 
 	 loading="lazy"  
-	 src=""
-	 sandbox=""
+	 src=" "
+	 sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
 	 style="height:500px;width:100%;display:none" 
 >
 </iframe>
@@ -26,8 +26,6 @@
         iframe.src = 'https://stackblitz.com/edit/daisyui-react-vite-hbar4g?file=src%2FApp.jsx'; // 在这里替换为实际的 URL
         iframe.sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
         iframe.style.display = 'block';
-	var btn = document.getElementById('loadIframeBtn');
-	btn.style.display = "none"
     });
 </script>
 
