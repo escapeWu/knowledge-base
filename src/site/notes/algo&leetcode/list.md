@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/algo-and-leetcode/list/","created":"2024-05-13T13:17:09.640+08:00","updated":"2024-05-14T11:02:17.875+08:00"}
+{"dg-publish":true,"permalink":"/algo-and-leetcode/list/","created":"2024-05-13T13:17:09.640+08:00","updated":"2024-05-14T11:05:34.819+08:00"}
 ---
 
 + [[algo&leetcode/26删除有序数组中的重复项\|删除有序数组中的重复项]]
@@ -7,11 +7,12 @@
 + [[algo&leetcode/150merge-sorted-array\|合并有序数组]]
 + [[algo&leetcode/189轮转数组\|轮转数组]]
 
-<button id="loadIframeBtn" id="loadIframeBtn">加载 stackblitz demo</button>
+<button id="loadIframeBtn">加载 stackblitz demo</button>
 <iframe 
+	 id="lazyIframe"
 	 loading="lazy"  
 	 src=" "
-	 sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+	 sandbox=" "
 	 style="height:500px;width:100%;display:none" 
 >
 </iframe>
