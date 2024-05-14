@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/algo-and-leetcode/list/","created":"2024-05-13T13:17:09.640+08:00","updated":"2024-05-14T10:52:45.673+08:00"}
+{"dg-publish":true,"permalink":"/algo-and-leetcode/list/","created":"2024-05-13T13:17:09.640+08:00","updated":"2024-05-14T10:57:35.897+08:00"}
 ---
 
 + [[algo&leetcode/26删除有序数组中的重复项\|删除有序数组中的重复项]]
@@ -8,13 +8,11 @@
 + [[algo&leetcode/189轮转数组\|轮转数组]]
 
 <div>
-	<button style="border-radius:5px;width:100%;font-weight:bold;" id="loadIframeBtn">加载 stackblitz demo</button>
+	<button id="loadIframeBtn" style="border-radius:5px;width:100%;font-weight:bold;" id="loadIframeBtn">加载 stackblitz demo</button>
 	<iframe 
-	     loading="lazy" 
-	     src=""
-	     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin" 
-	     style="height: 500px; width: 100%; display: none" 
->	
+	     loading="lazy"  
+	     style="height:500px;width:100%;display: none" 
+>
 	</iframe>
 </div>
 
@@ -25,7 +23,10 @@
     document.getElementById('loadIframeBtn').addEventListener('click', function() {
         var iframe = document.getElementById('lazyIframe');
         iframe.src = 'https://stackblitz.com/edit/daisyui-react-vite-hbar4g?file=src%2FApp.jsx'; // 在这里替换为实际的 URL
+        iframe.sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
         iframe.style.display = 'block';
+	var btn = document.getElementById('loadIframeBtn');
+	btn.style.display = "none"
     });
 </script>
 
