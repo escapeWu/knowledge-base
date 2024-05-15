@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/projects/pdf-notes/pdf-web-frame-work-brain-storm/","created":"2024-04-25T18:02:33.549+08:00","updated":"2024-04-25T18:02:08.000+08:00"}
+{"dg-publish":true,"permalink":"/projects/pdf-notes/pdf-web-frame-work-brain-storm/","created":"2024-04-25T18:02:33.549+08:00","updated":"2024-05-14T10:27:13.877+08:00"}
 ---
+
 
 
 计划实现类似marginNote的Web端应用。
