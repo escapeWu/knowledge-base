@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/life/digtal-garden-and-github-webhook/","created":"2024-05-30T15:28:39.620+08:00","updated":"2024-05-30T15:55:49.088+08:00"}
+{"dg-publish":true,"permalink":"/life/digtal-garden-and-github-webhook/","created":"2024-05-30T15:28:39.620+08:00","updated":"2024-05-30T16:20:58.609+08:00"}
 ---
 
 前因：
@@ -15,3 +15,5 @@
 一些小细节：
 1. 本地同一时间生成多个commit，github 会触发多个webook，NodeJS侧需要增加 防抖 [[frontend/JS/debounce&throttle\|debounce&throttle]] 限制，只触发最后一次hook
 2. nodejs 需要到特定工作区下执行脚本，因此使用pm2 将nodejs 注册为服务，长时间运行
+	+ nodejs 服务端: https://github.com/escapeWu/simple-nodejs-executor.git
+	+ pm2: https://pm2.keymetrics.io/
