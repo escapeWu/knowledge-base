@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/html-and-css/form/","created":"2024-05-27T15:04:10.000+08:00","updated":"2024-05-27T15:04:10.000+08:00"}
+{"dg-publish":true,"permalink":"/frontend/html-and-css/form/","created":"2024-05-27T15:04:10.000+08:00","updated":"2024-05-30T15:27:31.802+08:00"}
 ---
 
-
+789
 ### input Pattern validation 实现form 表单内容校验
 
 ```html
