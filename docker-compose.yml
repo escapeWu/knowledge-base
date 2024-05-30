@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "7777:7777"
+    volumes:
+      - ./dist:/usr/share/nginx/html
+    container_name: digital-garden
+
