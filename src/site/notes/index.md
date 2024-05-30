@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2024-04-22T10:55:21.340+08:00","updated":"2024-05-13T13:19:18.412+08:00"}
+{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2024-05-27T15:04:12.000+08:00","updated":"2024-05-27T15:04:12.000+08:00"}
 ---
 
 > 欢迎访问！这里是对所学所想知识的记录。文章可能内容存在纰漏，但它正在不断完善，请对它保持宽容
@@ -104,7 +104,7 @@ $<div class="markdown-embed-title">
 
 
 工程：
-+ [[backend/jabba管理jdk-windows\|jabba管理jdk-windows]]
++ [[backend/java/jabba管理jdk-windows\|jabba管理jdk-windows]]
 + [[backend/db/liquibase lock删除\|liquibase lock删除]]
 + [[backend/nacos_mysql_springboot_docker\|docker下配置nacos以及spring网络环境]]
 + [[backend/maven/maven 安装 -win - 翻译\|maven 安装 -win - 翻译]]
