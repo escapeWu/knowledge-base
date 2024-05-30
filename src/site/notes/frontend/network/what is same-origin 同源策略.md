@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/network/what-is-same-origin/","created":"2024-04-10T17:36:40.000+08:00","updated":"2024-04-10T17:36:40.000+08:00"}
+{"dg-publish":true,"permalink":"/frontend/network/what-is-same-origin/","created":"2024-05-27T15:04:11.000+08:00","updated":"2024-05-27T15:04:11.000+08:00"}
 ---
 
 **同源策略**：协议相同，域名相同，端口相同
