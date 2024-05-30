@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tools/docker/docker/","created":"2024-04-10T17:36:40.000+08:00","updated":"2024-05-08T10:59:23.120+08:00"}
+{"dg-publish":true,"permalink":"/tools/docker/docker/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-29T23:33:13.000+08:00"}
 ---
 
 #docker 
@@ -21,12 +21,12 @@
 
 - sudo apt-get update
 - sudo apt-get install docker-ce docker-ce-cli containerd.io
-<!--ID: 1681105680747-->
 
 
 #### 官方脚本安装
 
 ```bash
+
 # Add Docker's official GPG key:
 sudo apt-get update
 sudo apt-get install ca-certificates curl
