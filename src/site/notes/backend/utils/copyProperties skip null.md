@@ -1,10 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/backend/utils/copy-properties-skip-null/","created":"2024-05-27T15:04:10.000+08:00","updated":"2024-05-27T15:04:10.000+08:00"}
+{"dg-publish":true,"permalink":"/backend/utils/copy-properties-skip-null/","created":"2024-05-27T15:04:10.000+08:00","updated":"2024-05-30T17:50:04.586+08:00"}
 ---
 
 #spring 
+#### ANKI-java 复制非空属性值
 Spring 自带的BeanUtils copyProperties 不支持非null属性值复制，我们可以自己写一个util进行处理
-
 1. 写个util 获取 value 为null 的属性名
 ```java
 public class ObjectUtils {
@@ -27,3 +27,5 @@ public class ObjectUtils {
 BeanUtils.copyProperties(source, target, ObjectUtils.getNullPropertyNames(source));
 // operation on target
 ```
+ID: 1717062604578
+
