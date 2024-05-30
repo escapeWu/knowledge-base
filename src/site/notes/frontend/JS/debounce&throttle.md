@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/js/debounce-and-throttle/","created":"2024-04-10T17:36:40.000+08:00","updated":"2024-04-10T17:36:40.000+08:00"}
+{"dg-publish":true,"permalink":"/frontend/js/debounce-and-throttle/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-29T23:33:13.000+08:00"}
 ---
 
-#### debounce
+#### ANKI-debounce
 debounce 函数返回一个可执行函数。这个可执行函数的作用域链上保存了定时器变量。当重复执行的时候，会先清空掉上次生成的定时器，从而实现延迟执行的效果
 ```js
 function debounce(func, wait) {
@@ -15,9 +15,13 @@ function debounce(func, wait) {
   };
 }
 ```
-<!--ID: 1709174096543-->
+ID: 1716996349466
 
-#### throttle
+
+
+
+
+#### ANKI-throttle
 **timestamp 方式**
 原理与 防抖函数相同，通过 closure 存储上次执行的时间戳，当前时间戳和之前的时间戳相比较，如果超过约定时间，则执行一次函数。
 ```js
@@ -55,4 +59,6 @@ function rafThrottle(func) {
   };
 }
 ```
-<!--ID: 1709174096549-->
+ID: 1716996349468
+
+
