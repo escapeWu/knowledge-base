@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/html-and-css/encode-uri-and-encode-uri-component/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-29T23:33:13.000+08:00"}
+{"dg-publish":true,"permalink":"/frontend/html-and-css/encode-uri-and-encode-uri-component/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-30T15:27:25.371+08:00"}
 ---
 
 #### ANKI-encodeURI&encodeURIComponent的区别
@@ -14,5 +14,7 @@
     - 用于编码 URI 的组成部分，特别是查询参数或路径片段。
     - 例如，在拼接 URL 查询字符串时对每个参数进行编码。
 ID: 1716996349484
+
+456
 
 
