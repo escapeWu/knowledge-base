@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/react/next-js-route-walkthrough/","created":"2024-04-28T10:56:06.305+08:00","updated":"2024-05-08T17:15:05.311+08:00"}
+{"dg-publish":true,"permalink":"/frontend/react/next-js-route-walkthrough/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-29T23:33:13.000+08:00"}
 ---
 
 ## 路由结构
@@ -160,6 +160,8 @@ import { Button } from '@/components/button'
 #### [Catch-all Segments](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#catch-all-segments)
 Dynamic Segments can be extended to **catch-all** subsequent segments by adding an ellipsis inside the brackets `[...folderName]`.
 
+
+
 |Route|Example URL|`params`|
 |---|---|---|
 |`app/shop/[...slug]/page.js`|`/shop/a`|`{ slug: ['a'] }`|
@@ -167,6 +169,8 @@ Dynamic Segments can be extended to **catch-all** subsequent segments by addin
 |`app/shop/[...slug]/page.js`|`/shop/a/b/c`|`{ slug: ['a', 'b', 'c'] }`|
 #### [Optional Catch-all Segments](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#optional-catch-all-segments)
 Catch-all Segments can be made **optional** by including the parameter in double square brackets: `[[...folderName]]`.
+
+
 
 ==For example, `app/shop/[[...slug]]/page.js` will **also** match `/shop`==, in addition to `/shop/clothes`, `/shop/clothes/tops`, `/shop/clothes/tops/t-shirts`.
 
