@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/js/event-loop/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-30T14:56:57.953+08:00"}
+{"dg-publish":true,"permalink":"/frontend/js/event-loop/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-30T15:03:10.591+08:00"}
 ---
 
-333
+334
 #### ANKI-Event Loop 是什么？
 
 Event Loop（事件循环）是JavaScript中的一个核心机制，用于管理和协调异步操作，使得JavaScript在==单线程环境中能够高效地处理多个任务==。通过事件循环，JavaScript能够执行异步代码而不会阻塞主线程。
