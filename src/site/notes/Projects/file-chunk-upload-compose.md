@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/projects/file-chunk-upload-compose/","created":"2024-04-10T17:36:40.000+08:00","updated":"2024-04-10T17:36:40.000+08:00"}
+{"dg-publish":true,"permalink":"/projects/file-chunk-upload-compose/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-29T23:33:13.000+08:00"}
 ---
 
 
@@ -85,7 +85,7 @@ client(vue)：
 // input
 <input ref="fileRef" type="file">
 // functions
-<!--ID: 1708485426323-->
+
 
 
 function upload() {
