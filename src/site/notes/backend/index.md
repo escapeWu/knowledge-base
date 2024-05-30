@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/backend/index/","created":"2024-04-10T17:36:40.000+08:00","updated":"2024-05-10T09:56:28.791+08:00"}
+{"dg-publish":true,"permalink":"/backend/index/","created":"2024-05-27T15:04:10.000+08:00","updated":"2024-05-27T15:04:10.000+08:00"}
 ---
 
 工程：
-+ [[backend/jabba管理jdk-windows\|jabba管理jdk-windows]]
++ [[backend/java/jabba管理jdk-windows\|jabba管理jdk-windows]]
 + [[backend/db/liquibase lock删除\|liquibase lock删除]]
 + [[backend/nacos_mysql_springboot_docker\|docker下配置nacos以及spring网络环境]]
 + [[backend/maven/maven 安装 -win - 翻译\|maven 安装 -win - 翻译]]
