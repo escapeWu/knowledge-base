@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/js/basic/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-30T15:21:55.477+08:00"}
+{"dg-publish":true,"permalink":"/frontend/js/basic/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-30T15:23:00.650+08:00"}
 ---
 
-
+2
 #### ANKI-原始值与引用值的定义？
 ==原始值(primitive value)就是最简单的数据==,
 ==引用值(referencevalue)是保存在堆heap中对象==。JavaScript不论许直接访问内存位置,因此也就不能直接操作对象所在的内存空间。在操作对象时,实际上操作的是对该对象的引用(reference)而非实际的对象本身。为此,保存引用值的变量是按引用(byreference)访问的。
