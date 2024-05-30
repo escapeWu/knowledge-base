@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/backend/utils/java-execute-bash/","created":"2024-05-27T15:04:10.000+08:00","updated":"2024-05-27T15:04:10.000+08:00"}
+{"dg-publish":true,"permalink":"/backend/utils/java-execute-bash/","created":"2024-05-27T15:04:10.000+08:00","updated":"2024-05-30T17:49:37.287+08:00"}
 ---
 
 
-## Usage：
+#### java 执行bash指令：
 ==bash -c==: 
  使用 `ProcessBuilder` 时，它不会像在 shell 中那样自动展开通配符（如 `*`），因此需要指定使用  bash shell 来执行 cp 指令
 ```java
