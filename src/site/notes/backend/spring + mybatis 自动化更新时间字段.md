@@ -1,9 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/backend/spring-mybatis/","created":"2024-04-10T17:36:40.000+08:00","updated":"2024-04-10T17:36:40.000+08:00"}
+{"dg-publish":true,"permalink":"/backend/spring-mybatis/","created":"2024-05-27T15:04:10.000+08:00","updated":"2024-05-29T16:04:30.152+08:00"}
 ---
 
 #mybatis #spring 
 要求：自动更新createTime 和 updateTime 两个字段，并在插入的时候序列化为 yyyy-MM-dd HH:mm:ss 格式
+
+
 
 ### 创建自定义MetaObjectHandler 实现类，实现字段自动更新
 ```java
