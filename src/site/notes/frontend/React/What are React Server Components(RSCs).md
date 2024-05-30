@@ -1,6 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/react/what-are-react-server-components-rs-cs/","created":"2024-05-15T09:59:36.400+08:00","updated":"2024-05-15T10:49:14.174+08:00"}
+{"dg-publish":true,"permalink":"/frontend/react/what-are-react-server-components-rs-cs/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-29T23:33:13.000+08:00"}
 ---
+
+
+# What are React Server Components(RSCs)
 
 本文是 [What are React Server Components](https://unicorn-utterances.com/posts/what-are-react-server-components) 的翻译
 
@@ -95,8 +98,7 @@ export function profilePicture() {
 }
 ```
 
-## 服务端组件的局限
-
+#### ANKI-React服务端组件的局限
 因为服务端组件完全在服务端执行，有如下局限：
 + 不能使用 包括了 Client state 的 React Hook（useState, useReducer,等）
 + 不能使用 `<Context.Provider>`
@@ -112,4 +114,6 @@ export function profilePicture() {
 	+ ![Pasted image 20240515104654.png](/img/user/attachments/Pasted%20image%2020240515104654.png)
 	+ 允许
 	+ ![Pasted image 20240515104716.png](/img/user/attachments/Pasted%20image%2020240515104716.png)
+<!--ID: 1716995737357-->
+
 
