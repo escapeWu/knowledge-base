@@ -1,8 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/interview/html-and-css/","created":"2024-04-10T17:36:40.000+08:00","updated":"2024-04-10T17:36:40.000+08:00"}
+{"dg-publish":true,"permalink":"/interview/html-and-css/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-29T23:33:13.000+08:00"}
 ---
 
 #### 常见元素种类有哪些？
+[[Interview/HTML & CSS\|HTML & CSS]]
 - 行内元素 `inline`
     - 不会独占一行；相邻的排同一行；一行排不下会换行
     - ==不可设置宽高==
@@ -15,7 +16,7 @@
     - 独占一行
     - 可以设置宽高
     - `padding`、`margin` 设置有效
-<!--ID: 1708485724154-->
+
 
 
 
@@ -27,7 +28,7 @@
 4. 锚点定位 `<a href="#div1">去id为div1的位置去</a>`
 5. 协议限定符 `<a href="javascript:alert('hello world')">打开弹窗</a>`
 	1. 禁止刷新页面：`<a href="javascript:;">无法跳转</a>` （`javascript:;`）
-<!--ID: 1708486282901-->
+
 
 
 #### 说下元素嵌套?
@@ -36,7 +37,7 @@
 - 块元素能嵌套任何元素
 - **p 标签不能嵌套 div**
 - **a 标签不能嵌套 a 标签**
-<!--ID: 1708486282905-->
+
 
 #### 什么是盒模型？
 盒模型描述了html元素所占的空间。包括content, border, padding, margin
@@ -44,7 +45,7 @@
 + `boreder`，即边框
 + `padding`，即内边距，受background影响
 + `margin`，即外边距
-<!--ID: 1708501139898-->
+
 
 
 #### 说下标准盒子模型和IE怪异盒子模型
@@ -54,7 +55,7 @@
 IE 怪异盒子模型：
 + 盒子总宽度 = width + margin;
 + 盒子总高度 = height + margin;
-<!--ID: 1708501139903-->
+
 
 #### 说下 css的Box-sizing属性
 CSS 中的 box-sizing 属性定义了引擎应该如何计算一个元素的总宽度和总高度
@@ -65,7 +66,7 @@ box-sizing: content-box|border-box|inherit:
 + content-box(默认值)：元素的width/height 不包括 padding, border，与标准盒模型表现一致
 + border-box: 元素的width/height 包括padding, border, 与怪异盒模型表现一致
 + inherit：从父元素继承
-<!--ID: 1708501139905-->
+
 
 #### CSS选择器有哪些？
 常用：
@@ -132,7 +133,7 @@ input[type="text"] {
 	background-color:yellow;
 }
 ```
-<!--ID: 1708501161608-->
+
 
 #### 什么是margin 塌陷，如何避免？
 CSS中的“margin塌陷”是指在垂直方向上，相邻的两个元素的外边距（margin）会合并（collapse）成一个外边距的现象。
@@ -177,7 +178,7 @@ CSS中的“margin塌陷”是指在垂直方向上，相邻的两个元素的�
     </div>
 </body>
 ```
-<!--ID: 1708595070632-->
+
 
 #### 谈谈你对BFC的理解？
 `BFC`目的是形成一个相对于外界完全独立的空间，让内部的子元素不会影响到外部的元素
@@ -195,7 +196,7 @@ CSS中的“margin塌陷”是指在垂直方向上，相邻的两个元素的�
 - BFC的区域不会与float的元素区域重叠
 - 计算BFC的高度时，浮动子元素也参与计算
 - BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素，反之亦然
-<!--ID: 1708595070637-->
+
 
 #### 元素水平垂直居中的方法有哪些？
 - 利用定位+margin:auto
@@ -268,7 +269,7 @@ CSS中的“margin塌陷”是指在垂直方向上，相邻的两个元素的�
 	border: 1px solid red
 }
 ```
-<!--ID: 1708595773487-->
+
 
 #### 详细介绍下grid 布局？
 ![Pasted image 20240223140544.png](/img/user/attachments/Pasted%20image%2020240223140544.png)
@@ -336,7 +337,7 @@ grid-template-areas: 'a a a'
 ```
 意思为将1号项目位于`e`区域
 与上述讲到的`grid-template-areas`搭配使用
-<!--ID: 1708678052322-->
+
 #### 怎么理解回流跟重绘？什么场景下会触发？
 **是什么**：
 每个元素都可以理解成一个盒子，在浏览器解析过程中，会涉及到回流与重绘
@@ -390,6 +391,8 @@ container.style.color = 'red'
 container.style.display = 'block'
 ```
 
+
+
 #### 什么是响应式设计？如何做？
 响应式设计的基本原理是通过媒体查询检测不同的设备屏幕尺寸做处理，为了处理移动端，页面头部必须有`meta`声明`viewport`
 ```css
@@ -405,7 +408,7 @@ container.style.display = 'block'
 - 百分比
 - vw/vh
 - rem
-<!--ID: 1709108207591-->
+
 #### css 选择器有哪些可以继承：
 字体系列属性:
 ```css
@@ -446,4 +449,4 @@ list-style-type：文字前面的小点点样式
 list-style-position：小点点位置
 list-style：以上的属性可通过这属性集合
 ```
-<!--ID: 1709109474341-->
+
