@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/utils/utils-tree-path-find/","created":"2024-04-22T10:55:21.445+08:00","updated":"2024-04-16T15:02:03.000+08:00"}
+{"dg-publish":true,"permalink":"/frontend/utils/utils-tree-path-find/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-29T23:33:13.000+08:00"}
 ---
 
 [[A 前端\|A 前端]] #utils #tree
@@ -173,6 +173,9 @@ const mockTree = [
     ],
   },
 ];
+```
+#### ANKI-多叉树路径查找
+```ts
 /**
  *
  * @description 树节点路径查找
@@ -193,12 +196,10 @@ export function findPath(
   if (!Array.isArray(treeList) || !treeList.length) {
     throw new TypeError("请输入正确的树结构[ [], [], ..., []]", treeList);
   }
-
   return findCore({
     [defaultProps.key]: null,
     [defaultProps.children]: treeList,
-  });
-
+  })
   // 核心路径查找
   function findCore(tree, accPayload = []) {
     if (compareFn(tree, target)) return accPayload;
@@ -229,3 +230,5 @@ export function findPath(
   }
 }
 ```
+ID: 1716996349461
+
