@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/browser/web-storage/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-29T23:33:13.000+08:00"}
+{"dg-publish":true,"permalink":"/frontend/browser/web-storage/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-30T15:27:17.617+08:00"}
 ---
 
-
+123
 #### ANKI-web存储的可选方案
 
 | 名称                                          | 存储空间      | 有效期       | **存放位置** | 作用域                      |
