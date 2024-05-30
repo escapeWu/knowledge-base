@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/js/file-reader-api-common-usage/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-29T23:33:13.000+08:00"}
+{"dg-publish":true,"permalink":"/frontend/js/file-reader-api-common-usage/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-30T17:54:34.342+08:00"}
 ---
 
 #frontend #browser #FileReader
-
+#js
 #### ANKI-filereader api 读取本地文件方式
 ##### load event：file 被成功读取后执行
 支持两种语法：
