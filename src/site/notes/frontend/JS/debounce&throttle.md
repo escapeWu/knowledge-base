@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/js/debounce-and-throttle/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-30T15:15:37.554+08:00"}
+{"dg-publish":true,"permalink":"/frontend/js/debounce-and-throttle/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-30T15:17:32.723+08:00"}
 ---
 
 
-
+3
 #### ANKI-debounce
 debounce 函数返回一个可执行函数。这个可执行函数的作用域链上保存了定时器变量。当重复执行的时候，会先清空掉上次生成的定时器，从而实现延迟执行的效果
 ```js
