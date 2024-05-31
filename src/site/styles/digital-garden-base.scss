@@ -410,6 +410,17 @@ ul.task-list {
 
 .filename {
     margin-left: 5px;
+    white-space: nowrap;        /* 禁止换行 */
+    overflow: hidden;           /* 隐藏溢出的内容 */
+    text-overflow: ellipsis;    /* 使用省略号显示超长内容 */
+    max-width: 200px;           /* 根据需要设置合适的最大宽度 */
+}
+
+.filename:hover {
+    white-space: normal;        /* 允许换行 */
+    overflow: visible;          /* 显示溢出的内容 */
+    max-width: none;            /* 允许根据内容自动设置宽度 */
+    text-wrap: wrap;
 }
 
 .notelink.active-note {
