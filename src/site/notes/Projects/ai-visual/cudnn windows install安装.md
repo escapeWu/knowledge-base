@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/projects/ai-visual/cudnn-windows-install/","created":"2024-05-27T15:03:23.000+08:00","updated":"2024-05-27T15:03:23.000+08:00"}
+{"dg-publish":true,"permalink":"/projects/ai-visual/cudnn-windows-install/","created":"2024-05-27T15:37:40.571+08:00","updated":"2024-05-27T15:03:23.000+08:00"}
 ---
 
 以cudnn8.4为例
