@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/life/digtal-garden-and-github-webhook/","created":"2024-05-30T15:28:39.620+08:00","updated":"2024-05-30T16:20:58.609+08:00"}
+{"dg-publish":true,"permalink":"/life/digtal-garden-and-github-webhook/","created":"2024-05-30T22:52:49.327+08:00","updated":"2024-05-30T16:20:58.000+08:00"}
 ---
 
 前因：
