@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/backend/java/jabba-jdk-windows/","created":"2024-05-27T15:04:10.000+08:00","updated":"2024-05-27T15:04:10.000+08:00"}
+{"dg-publish":true,"permalink":"/backend/java/jabba-jdk-windows/","created":"2024-05-27T15:40:14.994+08:00","updated":"2024-05-27T15:04:10.000+08:00"}
 ---
 
 #windows #jdk
