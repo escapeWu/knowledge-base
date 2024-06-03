@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/js/basic/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-30T17:54:08.481+08:00"}
+{"dg-publish":true,"permalink":"/frontend/js/basic/","created":"2024-05-30T22:52:49.399+08:00","updated":"2024-05-30T17:54:08.000+08:00"}
 ---
 
 #js 
