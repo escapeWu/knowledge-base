@@ -90,10 +90,10 @@ $<div class="markdown-embed-title">
 
 
 
-+ [[frontend/utils/utils-createLimitPromise 多promise并发控制\|utils-createLimitPromise 多promise并发控制]]
-+ [[frontend/utils/utils - IndexedDB CRUD 简单封装\|utils - IndexedDB CRUD 简单封装]]
++ [[frontend/utils/utils-promise-concurrent\|utils-promise-concurrent]]
++ [[frontend/utils/IndexedDB_CRUD\|IndexedDB_CRUD]]
 + [[frontend/utils/utils - treeList to tree\|utils - treeList to tree]]
-+ [[frontend/utils/utils-tree-map 树结构字段操作\|utils-tree-map 树结构字段操作]]
++ [[frontend/utils/utils-tree-map\|utils-tree-map]]
 + [[frontend/utils/utils-tree path find\|utils-tree path find]]
 
 
