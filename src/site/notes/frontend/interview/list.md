@@ -13,17 +13,17 @@ TODO
 
 
 
-1. nuxt项目和vue项目部署的区别 - [[frontend/Vue/nuxt vue deploy 部署项目的区别\|nuxt vue deploy 部署项目的区别]]
+1. nuxt项目和vue项目部署的区别 - [[frontend/Vue/nuxt vue deploy diff\|nuxt vue deploy diff]]
 2. vue组件间相互通信一般有几种 
    2.1 了解过eventBus吗？
    2.2 eventBus有什么使用场景，和vuex的区别
 	   2.2.1 有两个组件，没有任何关联，a组件下有个c组件，b组件下有个d组件，实现它俩的组件间通信，例如，c组件点击一个按钮，需要d组件进行对应的变更。
 	   2.2.2 eventBus使用的注意点
-3.  vue2数据驱动双向绑定的原理  [[frontend/Vue/vue2-reactive 解析\|vue2-reactive 解析]]
+3.  vue2数据驱动双向绑定的原理  [[frontend/Vue/vue2-reactive\|vue2-reactive]]
 4.  vue2的依赖收集，data更改之后，如何真正渲染在页面上
-5.  说说vue3的双向绑定，说说Proxy [[frontend/Vue/vue3-reactive 解析\|vue3-reactive 解析]]
+5.  说说vue3的双向绑定，说说Proxy [[frontend/Vue/vue3-reactive\|vue3-reactive]]
 6.  浏览器的缓存机制，控制原理 
-	1. [[frontend/network/net-cache list 协商缓存和强缓存\|net-cache list 协商缓存和强缓存]]
+	1. [[frontend/network/net-cache\|net-cache]]
 	2. [[frontend/browser/web storage 前端存储方案\|web storage 前端存储方案]]
 7.  了解过cdn吗？cdn缓存有了解过吗？
 	1. [[frontend/network/cdn-what is caching\|cdn-what is caching]]
