@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/vue/vue2-basic/","created":"2024-06-03T21:15:02.433+08:00","updated":"2024-06-03T10:36:47.000+08:00"}
+{"dg-publish":true,"permalink":"/frontend/vue/vue2-basic/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-06-04T10:17:25.031+08:00"}
 ---
 
 
@@ -25,11 +25,17 @@ Vue创建过程是一个递归过程，先创建父组件，有子组件就会�
 
 #### ANKI-为什么不推荐v-if v-for 同时使用？
 ==vue2==
-v-for > v-if。 
-永远不要把 `v-if` 和 `v-for` 同时用在同一个元素上，带来性能方面的浪费（每次渲染都会先循环再进行条件判断）
+优先级：v-for > v-if。 
+每次渲染都会先循环再进行条件判断, 带来性能方面的浪费
 ==vue3==
-`<li v-for="user in users" v-if="user.isActive" :key="user.id" > {{ user.name }} </li>`
-v-if 比 v-for 有更高的优先级，对于上述代码，会抛出错误，因为v-if执行时候，user还不存在，正确用法
+优先级： v-if > v-for。 
+```html
+<li 
+	v-for="user in users" 
+	v-if="user.isActive" 
+	:key="user.id" > {{ user.name }} </li>
+```
+v-if 比 v-for 有更高的优先级，对于上述代码，==会抛出错误，因为v-if执行时候，user还不存在==，正确用法
 ```java
 <template v-for="todo in todos">
   <li v-if="!todo.isComplete">
