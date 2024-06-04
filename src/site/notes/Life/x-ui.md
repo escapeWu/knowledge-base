@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/life/x-ui/","created":"2024-05-27T15:37:32.383+08:00","updated":"2024-05-27T15:03:21.000+08:00"}
+{"dg-publish":true,"permalink":"/life/x-ui/","created":"2024-05-27T15:03:21.000+08:00","updated":"2024-05-27T15:03:21.000+08:00"}
 ---
 
 >写给自己看的x-ui快速配置流程
