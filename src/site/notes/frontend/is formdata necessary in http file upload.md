@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/is-formdata-necessary-in-http-file-upload/","created":"2024-05-27T15:40:15.231+08:00","updated":"2024-05-27T15:04:12.000+08:00"}
+{"dg-publish":true,"permalink":"/frontend/is-formdata-necessary-in-http-file-upload/","created":"2024-05-27T15:04:12.000+08:00","updated":"2024-05-27T15:04:12.000+08:00"}
 ---
 
 ### fetch API
