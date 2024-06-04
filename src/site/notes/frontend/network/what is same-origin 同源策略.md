@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/network/what-is-same-origin/","created":"2024-06-03T21:15:02.464+08:00","updated":"2024-06-03T10:37:07.000+08:00"}
+{"dg-publish":true,"permalink":"/frontend/network/what-is-same-origin/","created":"2024-05-27T15:04:11.000+08:00","updated":"2024-06-04T10:14:53.608+08:00"}
 ---
 
 #### ANKI-同源策略的定义
@@ -31,7 +31,10 @@ ID: 1717382227066
 
 
 #### ANKI-什么是postMessage？
-跨文档通信 API（Cross-document messaging）为`window`对象新增了一个`window.postMessage`方法，允许跨窗口通信，不论这两个窗口是否同源
+跨文档通信 API（Cross-document messaging）为`window`对象新增了一个`window.postMessage`方法，==允许跨窗口通信，不论这两个窗口是否同源==。
+流程：
++ 父页面 `window.open`打开 `childwindow`，通过 `childwindow.postMessage`发送消息。
++ 子页面 通过 `eventListener ‘message’` 接收，通过 `window.opener.postMessage` 可实现对任意页面的消息发送
 ```js
 // 父页面
 const childWindow = window.open('https://example.com/child.html', 'childWindow', 'width=600,height=400');
