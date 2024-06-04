@@ -72,7 +72,7 @@ async function getFileHash(file, {
 > web端使用fetch API 获取 input 的file chunk 并直接上传，server 使用nodejs 起http server，接收拼接chunk。web端上传完毕后，主动告诉server 需要进行合并。
 
 使用的重要API：
-+ fetch:[[frontend/is formdata necessary in http file upload\|is formdata necessary in http file upload]]
++ fetch:[[is formdata necessary in http file upload\|is formdata necessary in http file upload]]
 + node:fs
 	+ createReadStream：读取chunk
 	+ createWriteStream：持续写入chunk
