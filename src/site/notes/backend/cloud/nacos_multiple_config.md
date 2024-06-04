@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/backend/cloud/nacos-multiple-config/","created":"2024-05-27T15:39:29.510+08:00","updated":"2024-05-27T15:04:09.000+08:00"}
+{"dg-publish":true,"permalink":"/backend/cloud/nacos-multiple-config/","created":"2024-05-27T15:04:09.000+08:00","updated":"2024-05-27T15:04:09.000+08:00"}
 ---
 
 在nacos下通过namespace 配置多套配置文件
