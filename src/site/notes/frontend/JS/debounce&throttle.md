@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/js/debounce-and-throttle/","created":"2024-05-30T22:52:49.403+08:00","updated":"2024-05-30T17:54:18.000+08:00"}
+{"dg-publish":true,"permalink":"/frontend/js/debounce-and-throttle/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-30T17:54:18.155+08:00"}
 ---
 
 #js #utils 
