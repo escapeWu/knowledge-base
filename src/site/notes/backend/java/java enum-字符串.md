@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/backend/java/java-enum/","created":"2024-05-29T23:33:30.435+08:00","updated":"2024-05-29T23:33:13.000+08:00"}
+{"dg-publish":true,"permalink":"/backend/java/java-enum/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-29T23:33:13.000+08:00"}
 ---
 
 
