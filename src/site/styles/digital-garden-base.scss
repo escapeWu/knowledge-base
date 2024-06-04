@@ -311,7 +311,7 @@ ul.task-list {
     background-color: var(--background-secondary);
     color: var(--text-muted);
     overflow-y: auto;
-    width: 250px;
+    width: 300px;
     h1 {
         font-size: 32px !important;
     }
@@ -413,15 +413,16 @@ ul.task-list {
     white-space: nowrap;        /* 禁止换行 */
     overflow: hidden;           /* 隐藏溢出的内容 */
     text-overflow: ellipsis;    /* 使用省略号显示超长内容 */
-    max-width: 200px;           /* 根据需要设置合适的最大宽度 */
+    max-width: 250px;           /* 根据需要设置合适的最大宽度 */
+    font-size: small;
 }
 
-.filename:hover {
-    white-space: normal;        /* 允许换行 */
-    overflow: visible;          /* 显示溢出的内容 */
-    max-width: none;            /* 允许根据内容自动设置宽度 */
-    text-wrap: wrap;
-}
+// .filename:hover {
+//     white-space: normal;        /* 允许换行 */
+//     overflow: visible;          /* 显示溢出的内容 */
+//     max-width: none;            /* 允许根据内容自动设置宽度 */
+//     text-wrap: nowrap;
+// }
 
 .notelink.active-note {
     a {
@@ -527,11 +528,11 @@ ul.task-list {
 
 .search-button {
     background-color: var(--background-primary);
-    border-radius: 20px;
+    border-radius: 10px;
     height: 2em;
     display: flex;
     align-items: center;
-    min-width: 150px;
+    min-width: 250px;
     margin: 10px 40px;
     border: 1px solid var(--text-normal);
     cursor: pointer;
