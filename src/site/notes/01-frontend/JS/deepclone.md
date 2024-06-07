@@ -1,11 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/deepclone/","title":"JS 深拷贝的几种方式","tags":["WeakSet","basic","interview"],"created":"2024-06-04T10:28:22.626+08:00","updated":"2024-06-04T10:28:52.219+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/deepclone/","title":"JS 深拷贝的几种方式","tags":["WeakSet","basic","interview"],"created":"2024-06-04T23:27:38.405+08:00","updated":"2024-06-07T16:05:56.157+08:00"}
 ---
 
 
-递归，JSON.stringify, 第三方库
-
-<!-- more -->
 
 1. 递归（环引用，边界判断）
 
