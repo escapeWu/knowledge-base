@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/06-tools/docker/network/","created":"2024-05-27T15:03:24.000+08:00","updated":"2024-05-27T15:03:24.000+08:00"}
+{"dg-publish":true,"permalink":"/06-tools/docker/network/","created":"2024-05-27T15:37:48.700+08:00","updated":"2024-05-27T15:03:24.000+08:00"}
 ---
 
 [[A 运维\|A 运维]] #docker #bridge_network #container  
