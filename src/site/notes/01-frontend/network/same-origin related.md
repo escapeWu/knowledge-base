@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/network/same-origin-related/","title":"同源策略相关问题","created":"2024-05-27T15:04:11.000+08:00","updated":"2024-06-04T11:21:47.687+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/network/same-origin-related/","title":"同源策略相关问题","created":"2024-06-04T23:27:38.635+08:00","updated":"2024-06-04T11:21:47.000+08:00"}
 ---
 
 #### ANKI-同源策略的定义
