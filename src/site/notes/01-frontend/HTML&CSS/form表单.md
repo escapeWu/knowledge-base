@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/html-and-css/form/","created":"2024-05-27T15:04:10.000+08:00","updated":"2024-05-30T17:41:09.752+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/html-and-css/form/","created":"2024-06-07T11:07:55.962+08:00","updated":"2024-06-07T11:04:49.000+08:00"}
 ---
 
 
@@ -31,6 +31,8 @@ form表单本身也支持做些校验，可以设置的限制如下示例：
   <input type="submit" value="Send Request" />
 </form>
 ```
+ID: 1717729489016
+
 
 <form>
   <div class="emailBox">
