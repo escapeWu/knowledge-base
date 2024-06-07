@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/02-backend/utils/copy-properties-skip-null/","created":"2024-05-27T15:04:10.000+08:00","updated":"2024-05-30T17:50:04.586+08:00"}
+{"dg-publish":true,"permalink":"/02-backend/utils/copy-properties-skip-null/","created":"2024-05-30T22:52:49.337+08:00","updated":"2024-05-30T17:50:04.000+08:00"}
 ---
 
 #spring 
