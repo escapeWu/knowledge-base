@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/basic/","title":"JS 基础","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-06-04T11:20:41.265+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/basic/","title":"JS 基础","created":"2024-06-04T23:27:38.397+08:00","updated":"2024-06-04T11:20:41.000+08:00"}
 ---
 
 #js 
