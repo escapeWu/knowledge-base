@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/browser/web-worker/","created":"2024-06-04T10:40:23.105+08:00","updated":"2024-06-04T14:41:19.324+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/browser/web-worker/","title":"浏览器中web-worker 简单使用示例，及场景介绍","tags":["js","browser","web-worker"],"created":"2024-06-07T11:07:57.201+08:00","updated":"2024-06-07T16:12:49.704+08:00"}
 ---
 
 
@@ -41,6 +41,8 @@ calculateFibonacci(count)
 	console.log(result)
   })
 ```
+ID: 1717729489020
+
 
 #### webwoker 使用场景：图片打包压缩 TODO
 [[01-frontend/utils/imglist - zip\|imglist - zip]]
