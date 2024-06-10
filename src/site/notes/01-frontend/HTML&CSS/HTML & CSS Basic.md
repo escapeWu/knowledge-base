@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/html-and-css/html-and-css-basic/","created":"2024-05-30T22:52:49.341+08:00","updated":"2024-05-30T17:53:33.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/html-and-css/html-and-css-basic/","created":"2024-05-30T22:52:49.341+08:00","updated":"2024-06-10T21:17:01.071+08:00"}
 ---
 
 #### ANKI-常见元素种类有哪些？
@@ -39,7 +39,7 @@ ID: 1717061092121
 
 - 内联元素可以嵌套内联元素
 - 块元素能嵌套任何元素
-- **p 标签不能嵌套 div**
+- ==**p 标签不能嵌套 div**==
 - **a 标签不能嵌套 a 标签**
 ID: 1717061092124
 
