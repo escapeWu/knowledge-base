@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/network/same-origin-related/","title":"同源策略相关问题","created":"2024-06-04T23:27:38.635+08:00","updated":"2024-06-04T11:21:47.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/network/same-origin-related/","title":"同源策略相关问题","created":"2024-06-04T23:27:38.635+08:00","updated":"2024-06-10T21:21:57.549+08:00"}
 ---
 
 #### ANKI-同源策略的定义
@@ -35,7 +35,7 @@ ID: 1717382227066
 流程：
 + 父页面 `window.open`打开 `childwindow`，通过 `childwindow.postMessage`发送消息。
 + 子页面 通过 `eventListener ‘message’` 接收，通过 `window.opener.postMessage` 可实现对任意页面的消息发送
-```js
+```javascript
 // 父页面
 const childWindow = window.open('https://example.com/child.html', 'childWindow', 'width=600,height=400');
 // 发送消息
