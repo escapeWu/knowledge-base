@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2024-06-04T23:27:39.154+08:00","updated":"2024-06-04T13:15:57.000+08:00"}
+{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2024-06-04T23:27:39.154+08:00","updated":"2024-06-10T22:40:21.318+08:00"}
 ---
 
 > 欢迎访问！这里是对所学所想知识的记录。文章可能内容存在纰漏，但它正在不断完善，请对它保持宽容
@@ -7,9 +7,7 @@
 
 联系方式：
 邮箱：<a href="mailto:brainqa@shancw.net"> brainqa@shancw.net </a>
-
-### 最近文章
-[[07-Life/digtal-garden & github webhook 本地自动化部署\|digtal-garden & github webhook 本地自动化部署]]
+网站：https://imwsc.com:8443
 
 ### 计划清单 - 长期
 - [ ] IELTS 学习中，希望2024结束 读写能达到7.0水平
