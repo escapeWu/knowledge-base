@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/vue/vue2-basic/","created":"2024-06-04T23:27:38.546+08:00","updated":"2024-06-04T10:17:25.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/vue/vue2-basic/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-06-04T10:17:25.031+08:00"}
 ---
 
 
