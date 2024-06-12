@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/network/cdn-what-is-caching/","title":"什么是cdn？","created":"2024-06-04T23:27:38.620+08:00","updated":"2024-06-04T11:20:59.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/network/cdn-what-is-caching/","title":"什么是cdn？","created":"2024-06-04T10:33:58.562+08:00","updated":"2024-06-04T11:20:59.852+08:00"}
 ---
 
 https://www.cloudflare-cn.com/learning/cdn/what-is-caching/
