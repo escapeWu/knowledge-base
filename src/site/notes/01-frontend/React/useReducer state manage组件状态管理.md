@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/react/use-reducer-state-manage/","created":"2024-05-27T15:40:15.150+08:00","updated":"2024-05-27T15:04:11.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/react/use-reducer-state-manage/","created":"2024-05-27T15:04:11.000+08:00","updated":"2024-05-27T15:04:11.000+08:00"}
 ---
 
 
