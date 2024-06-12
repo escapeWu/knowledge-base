@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/react/tailwind-merge-class/","created":"2024-05-29T23:33:30.500+08:00","updated":"2024-05-29T23:33:13.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/react/tailwind-merge-class/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-29T23:33:13.000+08:00"}
 ---
 
 #### ANKI-tailwind-merge 作用?
