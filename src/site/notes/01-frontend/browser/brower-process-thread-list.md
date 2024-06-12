@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/browser/brower-process-thread-list/","title":"浏览器中的进程和线程","created":"2024-06-07T11:07:57.198+08:00","updated":"2024-06-07T16:02:30.652+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/browser/brower-process-thread-list/","title":"浏览器中的进程和线程","created":"2024-06-11T09:32:38.000+08:00","updated":"2024-06-11T09:32:38.000+08:00"}
 ---
 
 #### ANKI-浏览器里有哪些进程和线程
