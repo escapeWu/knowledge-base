@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/browser/web-storage/","tags":["browser","cache","frontend"],"created":"2024-06-04T23:27:38.564+08:00","updated":"2024-06-07T16:02:11.947+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/browser/web-storage/","tags":["browser","cache","frontend"],"created":"2024-06-07T16:01:17.000+08:00","updated":"2024-06-07T16:02:11.000+08:00"}
 ---
 
 
