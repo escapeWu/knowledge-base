@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/utils/imglist-zip/","title":"图片批量压缩下载","tags":["implement"],"created":"2024-06-04T23:27:38.656+08:00","updated":"2024-06-04T13:25:16.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/utils/imglist-zip/","title":"图片批量压缩下载","tags":["implement"],"created":"2024-06-04T10:39:39.864+08:00","updated":"2024-06-04T13:25:16.317+08:00"}
 ---
 
 ## TODO add webworker
