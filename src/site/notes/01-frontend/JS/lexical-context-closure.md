@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/lexical-context-closure/","title":"javascript 从词法环境角度来解释执行上下文，this指向，以及闭包.","tags":["js","basic"],"created":"2024-06-12T11:06:57.589+08:00","updated":"2024-06-12T12:12:41.860+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/lexical-context-closure/","title":"javascript 从词法环境角度来解释执行上下文，this指向，以及闭包.","tags":["js","basic"],"created":"2024-06-12T11:06:57.589+08:00","updated":"2024-06-12T12:48:31.355+08:00"}
 ---
 
 原博文地址：[Li Mei](https://limeii.github.io/#blog)
@@ -226,7 +226,7 @@ dd061096227582d8b4e8d0d5acc5ecf24a490ec9: [[Pasted Image 20240611192743_854.png]
 
 #### ANKI-什么是词法环境?
 在v8引擎里JS的编译过程：
-1. 分词/词法分析（tokenizing/lexing）
+1. 分词/词法分析（tokenizing/lexing） 
 2. token -> AST 抽象
 3. 生成cpu执行的机器码
 词法环境就是第一步中执行，==它用来登记变量声明、函数声明、函数声明的形参，后续代码执行的时候就知道去哪里拿变量的值和函数了，这个登记的地方就是`Lexical Environment（词法环境）`==
