@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/network/net-cache/","title":"HTTP - 缓存","tags":["cache","http","interview"],"created":"2024-06-04T10:38:39.579+08:00","updated":"2024-07-03T11:24:57.942+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/network/net-cache/","title":"HTTP - 缓存","tags":["cache","http","interview"],"created":"2024-06-04T10:38:39.579+08:00","updated":"2024-07-03T15:42:02.126+08:00"}
 ---
 
 #### ANKI-浏览器缓存流程：
@@ -11,7 +11,7 @@ graph TD
     B -->|未命中强缓存| C[发送请求到服务器]
     C -->|有缓存| F{Last-Modified/ETag}
     C -->|无缓存| D[直接从服务器加载资源]
-    F -->|命中协商缓存| G[返回请求，不返回数据，从缓存读取资源]
+    F -->|命中协商缓存| E[从缓存读取资源]
     F -->|未命中协商缓存| D[直接从服务器加载资源]
 ```
 - 1）浏览器在加载资源时，根据请求头的`expires`和`cache-control`判断是否命中强缓存，是则直接从缓存读取资源，不会发请求到服务器。
