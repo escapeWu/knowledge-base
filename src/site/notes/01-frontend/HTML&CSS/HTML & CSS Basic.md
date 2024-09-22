@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/html-and-css/html-and-css-basic/","created":"2024-06-11T09:32:37.000+08:00","updated":"2024-06-11T09:32:37.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/html-and-css/html-and-css-basic/","created":"2024-09-19T15:28:27.139+08:00","updated":"2024-09-21T23:57:41.007+08:00"}
 ---
 
 #### ANKI-常见元素种类有哪些？
@@ -102,9 +102,27 @@ ID: 1717061092132
    ```
 4. **属性选择器**：选择具有指定属性的元素。
    ```css
-   [type="text"] {
-       border: 1px solid black;
-   }
+   /* 存在 title 属性的 <a> 元素 */
+	a[title] {
+	  color: purple;
+	}
+	/* 存在 href 属性并且属性值匹配"https://example.org"的 <a> 元素 */
+	a[href="https://example.org"]
+	{
+	  color: green;
+	}
+	/* 存在 href 属性并且属性值包含"example"的 <a> 元素 */
+	a[href*="example"] {
+	  font-size: 2em;
+	}
+	/* 存在 href 属性并且属性值结尾是".org"的 <a> 元素 */
+	a[href$=".org"] {
+	  font-style: italic;
+	}
+	/* 存在 class 属性并且属性值包含单词"logo"的<a>元素 */
+	a[class~="logo"] {
+	  padding: 2px;
+	}
    ```
 5. **后代选择器**：选择某个元素内的所有指定后代元素。
    ```css
@@ -114,15 +132,17 @@ ID: 1717061092132
    ```
 6. **子选择器**：选择某个元素的直接子元素。
    ```css
-   ul > li {
-       list-style: none;
-   }
+	/* 选择属于“my-things”类的无序列表（ul）的直接子列表元素（li） */
+	ul.my-things > li {
+	  margin: 2em;
+	}
    ```
 7. **相邻兄弟选择器**：选择紧接在另一个元素后的元素。
    ```css
-   h1 + p {
-       font-weight: bold;
-   }
+	/* 图片后面紧跟着的段落将被选中 */
+	img + p {
+	  font-weight: bold;
+	}
    ```
 8. **通用选择器**：选择所有元素，使用`*`。
    ```css
@@ -149,31 +169,6 @@ ID: 1717061092132
         margin-bottom: 20px;
     }
     ```
-12. **后代组合选择器**：结合多种选择器来指定更加精确的元素。
-    ```css
-    div.myClass > p.special {
-        color: green;
-    }
-    ```
-13. **属性值包含选择器**：选择属性值包含特定字符串的元素。
-    ```css
-    [title~="flower"] {
-        border: 1px solid red;
-    }
-    ```
-14. **属性值以特定字符串开始的选择器**：选择属性值以特定字符串开头的元素。
-    ```css
-    [class^="btn-"] {
-        padding: 10px;
-    }
-    ```
-15. **属性值以特定字符串结尾的选择器**：选择属性值以特定字符串结尾的元素。
-    ```css
-    [class$="-active"] {
-        background-color: green;
-    }
-    ```
-通过这些选择器，您可以灵活地选择并样式化HTML文档中的不同元素。
 ID: 1717061092134
 
 
@@ -229,18 +224,24 @@ ID: 1717061092137
 `BFC`目的是形成一个相对于外界完全独立的空间，让内部的子元素不会影响到外部的元素
 **触发条件**
 触发`BFC`的条件包含不限于：
-- 根元素，即HTML元素
 - 浮动元素：float值为left、right
-- overflow值不为 visible，为 auto、scroll、hidden
-- display的值为inline-block、 table-cell inline-block flex inline-flex grid inline-grid table-caption(表格标题)
 - position的值为absolute或fixed
+- overflow值不为 visible，为 auto、scroll、hidden
+- flex和grid布局， diplay和table相关的，比如table, table-cell等
+
 **BFC 形成后，会有什么渲染规则？**
 - 内部的盒子会在垂直方向上一个接一个的放置
-- 对于同一个BFC的俩个相邻的盒子的margin会发生重叠，与方向无关。
+- 同一个BFC的俩个相邻的盒子的margin会发生重叠，与方向无关。
 - 每个元素的左外边距与包含块的左边界相接触（从左到右），即使浮动元素也是如此
 - BFC的区域不会与float的元素区域重叠
-- 计算BFC的高度时，浮动子元素也参与计算
+- 计算BFC的高度时，浮动子元素也参与计算 [[01-frontend/HTML&CSS/css浮动 与 BFC\|css浮动 与 BFC]]
 - BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素，反之亦然
+**应用**：
+1. 阻止margin重叠
+2. 可以包含浮动元素 —— 清除内部浮动(清除浮动的原理是两个div都位于同一个 BFC 区域之中)
+3. 可以阻止元素被浮动元素覆盖
+	1. 浮动元素会影响兄弟元素的位置，具体地说就是浮动之后脱离了文档流，使得兄弟元素上移填补空缺，而这会使得它被浮动元素覆盖
+	2. 但是触发了兄弟元素的 BFC 后，兄元素将不会被浮动的元素覆盖 ———— 不会被覆盖，意味着兄弟元素出现在浮动元素的旁边或者下面，具体取决于父元素的宽度
 ID: 1717061092139
 
 
@@ -320,6 +321,8 @@ ID: 1717061092141
 
 
 #### ANKI-说下你理解的Grid 布局？
+[MDN GRID 常用布局场景参考](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_grid_layout/Realizing_common_layouts_using_grids#%E4%BD%BF%E7%94%A8%E7%BD%91%E6%A0%BC%E6%A8%A1%E6%9D%BF%E5%8C%BA%E5%9F%9F%E7%9A%84%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80%EF%BC%8C%E5%8C%85%E5%90%AB_1_%E5%88%B0_3_%E4%B8%AA%E6%B5%81%E5%8A%A8%E5%88%97)
+`grid-template-areas, grid-template-rows, grid-template-colums, grid-gap, grid-colum, grid-row`
 ==基本概念==
 1. **Grid Container**: 任何一个元素都可以成为Grid容器，只需要在其CSS中设置`display: grid`或`display: inline-grid`。Grid容器会包含所有的Grid项。
 2. **Grid Items**: Grid容器中的直接子元素自动成为Grid项，可以在Grid容器内进行布局。
@@ -331,6 +334,7 @@ ID: 1717061092141
        grid-template-columns: 1fr 2fr 1fr;
        grid-template-rows: 100px 200px;
    }
+   // fr 表示剩余空间。
    ```
 2. **grid-gap**: 也称为`gap`，用于设置行和列之间的间距。可以分别设置行间距（`row-gap`）和列间距（`column-gap`）。
    ```css
@@ -400,15 +404,17 @@ Grid布局非常适合响应式设计。通过媒体查询，可以轻松调整�
 ID: 1717061092144
 
 
-#### ANKI-怎么理解回流跟重绘？什么场景下会触发？
+#### ANKI-什么是回流，什么是重绘？什么场景下会触发？我们如何减少回流来优化性能？
 ==回流（Reflow）==
 回流，也称为布局（Layout），是指当页面的结构发生变化，浏览器需要重新计算元素的位置和尺寸。回流会影响页面的布局，因此可能会导致整个页面或部分页面的重新渲染。
 ==触发回流的情况：==
 1. 添加或删除可见的DOM元素。
 2. 元素的尺寸、边距、边框、填充、宽度和高度等样式发生变化。
 3. 浏览器窗口的大小发生变化（例如，用户调整窗口大小）。
-4. 读取某些属性（如 `offsetHeight`、`offsetWidth`、`scrollTop` 等），因为这些操作需要确保布局信息是最新的。
-	1. `offsetTop、offsetLeft、 offsetWidth、offsetHeight、scrollTop、scrollLeft、scrollWidth、scrollHeight、clientTop、clientLeft、clientWidth、clientHeight`
+4. 读取某些属性（如offsetxxx, clientXXX, scrollXXX等），因为这些操作需要确保布局信息是最新的。
+	1. ==offset==Top、offsetLeft、 offsetWidth、offsetHeight、
+	2. ==client==Top、clientLeft、clientWidth、clientHeight`
+	3. ==scroll==Top、scrollLeft、scrollWidth、scrollHeight、
 5. 改变页面的字体大小。
 ==重绘（Repaint）==
 重绘是指元素的外观发生变化，但并不影响布局。重绘仅仅是重新绘制元素的外观，比如改变元素的颜色、背景、可见性等。
@@ -419,24 +425,26 @@ ID: 1717061092144
 ==回流和重绘对性能的影响==
 回流的开销通常比重绘大，因为回流不仅需要重新计算元素的几何属性，还需要重新构建渲染树，可能导致整个页面的重新布局。重绘虽然相对开销较小，但如果频繁发生，也会影响性能。
 ==性能优化建议：==
-1. **减少DOM操作**：尽量减少对DOM的直接操作，使用文档片段（DocumentFragment）或将多个操作合并在一起。
-2. **避免频繁的回流和重绘**：在需要大量操作DOM时，可以先将元素设置为不可见（`display: none`），操作完成后再显示。
+1. **减少DOM操作**：尽量减少对DOM的直接操作，需要大量操作DOM时，可以先将元素设置为不可见（`display: none`），操作完成后再显示。
 3. **批量修改样式**：避免逐一修改元素的样式，尽量使用CSS类来批量应用样式。
 4. **使用CSS动画替代JavaScript动画**：CSS动画通常会比JavaScript动画更高效，因为它们可以利用浏览器的优化机制。
 5. **避免读取会触发回流的属性**：尽量避免频繁读取会触发回流的属性，如 `offsetHeight`、`offsetWidth` 等。
-**浏览器解析渲染页面的流程：**
+ID: 1717061776357
+
+
+#### ANKI-浏览器解析渲染页面的流程
 ![Pasted image 20240226174126.png](/img/user/attachments/Pasted%20image%2020240226174126.png)
 - 解析HTML，生成DOM树，解析CSS，生成CSSOM树
 - 将DOM树和CSSOM树结合，生成渲染树(Render Tree)
 - ==Layout(回流)==:根据生成的渲染树，进行回流(Layout)，得到节点的==几何信息==（位置，大小）
 - ==Painting(重绘)==:根据渲染树以及回流得到的几何信息，得到节点的==绝对像素==
 - ==Display==:将像素发送给GPU，展示在页面上
-ID: 1717061776357
+
 
 
 
 #### ANKI-为什么获取特定属性值，也会触发重绘？
-由于每次重排都会造成额外的计算消耗，因此大多数浏览器都会通过队列化修改并批量执行来优化重排过程。浏览器会将修改操作放入到队列里，直到过了一段时间或者操作达到了一个阈值，才清空队列。
+由于每次重排都会造成额外的计算消耗，因此==大多数浏览器都会通过队列化修改并批量执行来优化重排过程==。浏览器会将修改操作放入到队列里，直到过了一段时间或者操作达到了一个阈值，才清空队列。
 当你获取布局信息的操作的时候，==会强制队列刷新==，包括前面讲到的`offsetTop`等方法都会返回最新的数据
 因此浏览器不得不清空队列，触发回流重绘来返回正确的值
 **如何减少**
@@ -461,14 +469,14 @@ ID: 1717061776361
 
 
 #### ANKI-css 有哪些属性可以继承：
+主要回答 字体，文本，元素可见性 详细，额外补充表格布局，不要求具体
 字体系列属性:
 ```css
-font:组合字体
 font-family:规定元素的字体系列
 font-weight:设置字体的粗细
-font-size:设置字体的尺寸
-font-style:定义字体的风格
-font-variant:偏大或偏小的字体
+font-size:设置字体的尺寸, small, medium, larger
+font-style:定义字体的风格，normal, italic（斜体）
+font-variant:偏大或偏小的字体 normal, small-caps(小型大写字母)
 ```
 文本：
 ```css
@@ -476,8 +484,8 @@ text-indent：文本缩进
 text-align：文本水平对齐
 text-shadow：设置文本阴影
 line-height：行高
-word-spacing：增加或减少单词间的空白（即字间隔）
-letter-spacing：增加或减少字符间的空白（字符间距）
+word-spacing：增加或减少**单词**间的空白（即字间隔）
+letter-spacing：增加或减少**字符**间的空白（字符间距）
 text-transform：控制文本大小写
 direction：规定文本的书写方向
 color：文本颜色
@@ -486,19 +494,13 @@ color：文本颜色
 ```css
 visibility
 ```
-表格布局属性
+表格布局属性(用的少，记住标题就行)
 ```css
 caption-side：定位表格标题位置
 border-collapse：合并表格边框
 border-spacing：设置相邻单元格的边框间的距离
 empty-cells：单元格的边框的出现与消失
 table-layout：表格的宽度由什么决定
-```
-列表属性
-```css
-list-style-type：文字前面的小点点样式
-list-style-position：小点点位置
-list-style：以上的属性可通过这属性集合
 ```
 ID: 1717061776365
 
