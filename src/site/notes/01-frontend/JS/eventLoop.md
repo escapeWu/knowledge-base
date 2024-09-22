@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/event-loop/","title":"js中事件循环是什么？","created":"2024-06-11T09:32:37.000+08:00","updated":"2024-07-03T16:59:42.828+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/event-loop/","title":"js中事件循环是什么？","created":"2024-08-07T13:26:34.952+08:00","updated":"2024-08-07T13:25:40.000+08:00"}
 ---
 
 #js
@@ -16,7 +16,7 @@
 	+ 时间到，则通知**事件触发线程**，将定时器对应的任务放入Js引擎的任务队列；
 	+  HTML标准中要求，低于4ms的定时，时间间隔都算作4ms（也就是定时器最低时间间隔为4ms）。
 - 5.异步http请求**线程**
-Event Loop 实际上就是一个 job，用来检测 Call Stack 和 Callback Queue，一旦 Call Stack 里代码执行完以后，就会把 Callback Queue 里第一个 callback 函数放到 Call Stack 里执行。
+==Event Loop 实际上就是一个 job，用来检测 Call Stack 和 Callback Queue，一旦 Call Stack 里代码执行完以后，就会把 Callback Queue 里第一个 callback 函数放到 Call Stack 里执行。==
 ![Pasted image 20240703165901.png](/img/user/Pasted%20image%2020240703165901.png)
 任务分类
 - **宏任务（Macro Task）**: 包括 `setTimeout`, `setInterval`, I/O 操作等。
