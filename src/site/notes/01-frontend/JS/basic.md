@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/basic/","title":"JS 基础","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-06-04T11:20:41.265+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/basic/","title":"JS 基础","created":"2024-09-16T14:25:42.481+08:00","updated":"2024-09-14T14:52:23.000+08:00"}
 ---
 
 #js 
@@ -27,35 +27,22 @@ ID: 1716996349477
 
 #### ANKI-执行上下文是什么 context？
 执行上下文（Execution Context）是 JavaScript 中的一个抽象概念，它描述了代码被执行时的环境。每当 JavaScript 代码被执行时，都会创建一个执行上下文，并且在代码执行完毕后被销毁。
-执行上下文可以分为三种类型：
-1. **全局执行上下文（Global Execution Context）**：在代码执行之前，会首先创建全局执行上下文。全局执行上下文是整个 JavaScript 程序的最顶层的执行上下文，它会在页面加载时创建，直到页面关闭时销毁。全局执行上下文中包含了全局对象（例如在浏览器环境中是 `window` 对象）、全局变量和函数等信息。
-2. **函数执行上下文（Function Execution Context）**：每当函数被调用时，都会创建一个新的函数执行上下文。函数执行上下文与函数调用相关联，它包含了函数的参数、局部变量、内部函数声明等信息。当函数执行完毕后，其执行上下文会被销毁。
-3. ==**评估/调用栈执行上下文（Eval/Call Stack Execution Context）**==：在 JavaScript 引擎内部，存在一个称为调用栈（Call Stack）的数据结构，用于管理当前正在执行的执行上下文。当函数被调用时，其执行上下文会被推入调用栈；当函数执行完毕后，其执行上下文会从调用栈中弹出。
-执行上下文由三个重要的组件构成：
-- **变量对象（Variable Object）**：包含了函数的参数、内部变量和函数声明等信息。
-- **作用域链（Scope Chain）**：用于解析变量标识符的一种机制。它由当前执行上下文的变量对象和所有包含（父级）执行上下文的变量对象组成的链式结构。
-- **this 指向**：指向当前执行上下文所属的对象。
-```js
-var globalVariable = 'I am global'; // 全局变量
-function outerFunction() {
-  var outerVariable = 'I am outer'; // 外部函数的局部变量
-  function innerFunction() {
-    var innerVariable = 'I am inner'; // 内部函数的局部变量
-    console.log(globalVariable); // 访问全局变量
-    console.log(outerVariable); // 访问外部函数的局部变量
-    console.log(innerVariable); // 访问内部函数的局部变量
-  } 
-  innerFunction(); // 调用内部函数
-}
-outerFunction(); // 调用外部函数
-```
-在上面的代码中，我们有一个外部函数 `outerFunction` 和一个内部函数 `innerFunction`。当我们调用 `outerFunction()` 时，会创建一个新的函数执行上下文，即外部函数的执行上下文。然后，在外部函数的执行上下文中调用 `innerFunction()`，又会创建一个新的函数执行上下文，即内部函数的执行上下文。这些执行上下文会被推入调用栈（Call Stack）中。
-```
-innerFunction Execution Context
-outerFunction Execution Context
-Global Execution Context
-```
-在调用栈中，我们当前正在执行 `innerFunction` 的执行上下文。在该上下文中，我们可以访问到内部函数的局部变量 `innerVariable` 和外部函数的局部变量 `outerVariable`。当 `innerFunction` 执行完毕后，它的执行上下文会从调用栈中弹出。然后，外部函数 `outerFunction` 的执行上下文变为当前执行上下文，直到它也执行完毕并从调用栈中弹出。最后，全局执行上下文变为当前执行上下文，直到程序结束
+**执行上下文类型**：
+1. **全局执行上下文（Global Execution Context）**：默认的执行上下文。在浏览器环境中，全局对象是`window`, 在Nodejs环境下，全局对象是`global`
+2. **函数执行上下文（Function Execution Context）**：每次调用函数，都会创建。每个函数调用都有自己的上下文，并且可以嵌套
+3. ==**eval执行上下文（Eval/Call Stack Execution Context）**==：eval 函数引发，很少使用。
+**执行上下文的组件：**
+- **变量对象（Variable Object, VO）**：包含了函数的形参、内部变量和函数声明。对于函数上下文来说，它被称为活动对象( Activation Object, AO)
+- **作用域链（Scope Chain）**：用于解析变量,  包含当前上下文的变量对象，以及所有父级（词法）上下文的变量对象。
+- **this 指向**：不同的执行上下文中 this 的值不同。在全局上下文中，this指向全局对象；在函数上下文中，this的值取决于函数的调用方式。
+**执行上下文的生命周期**
++ 创建阶段：
+	+ 创建变量对象：包括函数参数，函数声明，变量声明
+	+ 创建作用域链：形成一个作用域链，并且与其当前执行上下文关联
+	+ 确定this的值：根据调用位置，确定当前上下文的this值
++ 执行阶段
+	+ 变量分配：变量赋值和函数引用开始执行
+	+ 执行代码：根据代码逻辑逐行执行，完成整个执行过程
 ID: 1716996349480
 
 
