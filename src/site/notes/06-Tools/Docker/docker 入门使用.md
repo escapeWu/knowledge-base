@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/06-tools/docker/docker/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-29T23:33:13.000+08:00"}
+{"dg-publish":true,"permalink":"/06-tools/docker/docker/","created":"2024-07-03T16:24:15.841+08:00","updated":"2024-07-07T21:15:07.367+08:00"}
 ---
 
 #docker 
@@ -554,4 +554,14 @@ mv /var/lib/docker /data/docker
 # 进行链接
 ln -sf /data/docker /var/lib/docker
 ```
+
+#### ANKI-修改 docker 数据的存放位置 - daemon.json
+实测，误删docker，由于存储位置提前设置了其他盘，重新安装后，所有容器镜像数据都还在
+`/etc/docker/daemon.json`
+```json
+{
+    "data-root": "/home/shancw/dock1/docker"
+}
+```
+ID: 1719995018097
 
