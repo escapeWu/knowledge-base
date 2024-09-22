@@ -1,8 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/utils/utils-tree-path-find/","created":"2024-05-29T23:33:13.000+08:00","updated":"2024-05-29T23:33:13.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/utils/utils-tree-path-find/","created":"2024-07-03T17:05:15.837+08:00","updated":"2024-07-03T17:04:27.000+08:00"}
 ---
 
 [[A 前端\|A 前端]] #utils #tree
+
 
 多叉树路径查找
 
@@ -175,6 +176,8 @@ const mockTree = [
 ];
 ```
 #### ANKI-多叉树路径查找
+回溯算法：
+https://www.hello-algo.com/chapter_backtracking/backtracking_algorithm/#1311
 ```ts
 /**
  *
