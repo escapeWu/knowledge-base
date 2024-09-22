@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/browser/web-worker/","title":"浏览器中web-worker 简单使用示例，及场景介绍","tags":["js","browser","web-worker"],"created":"2024-06-11T09:32:38.000+08:00","updated":"2024-06-11T09:32:38.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/browser/web-worker/","title":"浏览器中web-worker 简单使用示例，及场景介绍","tags":["js","browser","web-worker"],"created":"2024-06-11T22:35:09.016+08:00","updated":"2024-06-11T09:32:38.000+08:00"}
 ---
 
 
