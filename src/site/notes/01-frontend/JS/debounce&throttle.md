@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/debounce-and-throttle/","title":"防抖节流知多少","tags":["utils","js"],"created":"2024-06-11T09:32:37.000+08:00","updated":"2024-06-11T09:32:37.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/debounce-and-throttle/","title":"防抖节流知多少","tags":["utils","js"],"created":"2024-07-03T16:06:45.866+08:00","updated":"2024-07-03T16:05:53.000+08:00"}
 ---
 
 #js #utils 
@@ -34,13 +34,13 @@ function throttle(func, interval) {
     clearTimeout(timer);
     let curDate = Date.now();
     const diff = curDate - lastTimeStamp;
-    if (curDate - lastTimeStamp > interval) {
+    if (diff > interval) {
       func.apply(this, args);
       lastTimeStamp = curDate;
     } else {
       timer = setTimeout(() => {
         func.apply(this, args)
-      }, interval)
+      }, interval - diff)
     }
   };
 }
