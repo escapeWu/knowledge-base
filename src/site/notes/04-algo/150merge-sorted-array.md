@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/04-algo/150merge-sorted-array/","created":"2024-05-29T22:16:18.000+08:00","updated":"2024-05-29T22:16:18.000+08:00"}
+{"dg-publish":true,"permalink":"/04-algo/150merge-sorted-array/","created":"2024-05-29T22:16:45.491+08:00","updated":"2024-05-29T22:16:18.000+08:00"}
 ---
 
 
