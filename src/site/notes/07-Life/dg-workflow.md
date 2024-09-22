@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/07-life/dg-workflow/","created":"2024-05-30T16:28:56.026+08:00","updated":"2024-05-30T16:44:13.631+08:00"}
+{"dg-publish":true,"permalink":"/07-life/dg-workflow/","created":"2024-05-30T22:52:49.323+08:00","updated":"2024-05-30T16:44:13.000+08:00"}
 ---
 
 介绍下我的笔记工作流：
