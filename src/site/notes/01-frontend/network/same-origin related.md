@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/network/same-origin-related/","title":"同源策略相关问题","created":"2024-06-11T09:32:38.000+08:00","updated":"2024-06-11T09:32:38.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/network/same-origin-related/","title":"同源策略相关问题","created":"2024-07-03T16:23:15.807+08:00","updated":"2024-07-03T16:22:12.000+08:00"}
 ---
 
 #### ANKI-同源策略的定义
@@ -25,13 +25,15 @@
 ID: 1717062266329
 
 #### ANKI-如何借助cookie， iframe实现跨域信息共享
-Cookie 是服务器写入浏览器的一小段信息，只有同源的网页才能共享。但是，两个网页==一级域名相同，只是二级域名不同==，浏览器允许通过设置`document.domain`共享 Cookie。
+Cookie 是服务器写入浏览器的一小段信息，共享方式：
+1. 同源的网页直接共享。
+2. 两个网页==一级域名相同，只是二级域名不同==，浏览器允许通过设置`document.domain` 来共享
 iframe 也是相同操作
 ID: 1717382227066
 
 
 #### ANKI-什么是postMessage？
-跨文档通信 API（Cross-document messaging）为`window`对象新增了一个`window.postMessage`方法，==允许跨窗口通信，不论这两个窗口是否同源==。
+跨文档通信 API（Cross-document messaging）为`window`对象新增了一个`window.postMessage`方法，==允许跨窗口通信，不论这两个窗口是否同源== postMessage 还可以在worker中实现主线程和worker线程的通信。
 流程：
 + 父页面 `window.open`打开 `childwindow`，通过 `childwindow.postMessage`发送消息。
 + 子页面 通过 `eventListener ‘message’` 接收，通过 `window.opener.postMessage` 可实现对任意页面的消息发送
