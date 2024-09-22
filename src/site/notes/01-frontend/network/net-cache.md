@@ -1,23 +1,23 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/network/net-cache/","title":"HTTP - 缓存","tags":["cache","http","interview"],"created":"2024-06-04T10:38:39.579+08:00","updated":"2024-07-03T15:42:02.126+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/network/net-cache/","title":"HTTP - 缓存","tags":["cache","http","interview"],"created":"2024-08-07T13:20:05.109+08:00","updated":"2024-09-16T22:09:59.392+08:00"}
 ---
 
 #### ANKI-浏览器缓存流程：
 ```mermaid
 graph TD
-    A[资源加载] -->|有缓存| B{Expires/Cache-Control}
-    A -->|无缓存| D[发送请求到服务器]
+    A[资源加载] -->|本地有缓存| B{Expires/Cache-Control}
+    A -->|本地无缓存| D[发送请求到服务器]
     B -->|命中强缓存| E[从缓存读取资源]
-    B -->|未命中强缓存| C[发送请求到服务器]
-    C -->|有缓存| F{Last-Modified/ETag}
-    C -->|无缓存| D[直接从服务器加载资源]
+    B -->|强缓存过期| C[发送请求到服务器]
+    C -->|服务器有缓存| F{Last-Modified/ETag}
+    C -->|服务器无缓存| D[直接从服务器加载资源]
     F -->|命中协商缓存| E[从缓存读取资源]
-    F -->|未命中协商缓存| D[直接从服务器加载资源]
+    F -->|协商缓存过期| D[直接从服务器加载资源]
 ```
 - 1）浏览器在加载资源时，根据请求头的`expires`和`cache-control`判断是否命中强缓存，是则直接从缓存读取资源，不会发请求到服务器。
 - 2）如果没有命中强缓存，浏览器一定会发送一个请求到服务器，通过`last-modified`和`etag`验证资源是否命中协商缓存，如果命中，服务器会将这个请求返回，但是不会返回这个资源的数据，依然是从缓存中读取资源
 - 3）如果前面两者都没有命中，直接从服务器加载资源
-大致的顺序
+==大致的顺序==
 - Cache-Control —— 请求服务器之前
 - Expires —— 请求服务器之前
 - If-None-Match (Etag) —— 请求服务器
@@ -35,6 +35,8 @@ ID: 1717469946234
 存储图像和网页等资源主要缓存在disk cache，操作系统缓存文件等资源大部分都会缓存在memory cache中。==具体操作浏览器自动分配，看谁的资源利用率不高就分给谁==
 **Push Cache** Http2：
 Push Cache是一种推送式缓存，由服务器主动将资源推送给浏览器进行缓存。这种方式主要用于优化网页的首次加载速度。
+ID: 1719995018103
+
 
 #### ANKI-强缓存
 强缓存通过`Expires`和`Cache-Control`两种响应头实现
