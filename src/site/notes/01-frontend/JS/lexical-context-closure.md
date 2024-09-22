@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/lexical-context-closure/","title":"javascript 从词法环境角度来解释执行上下文，this指向，以及闭包.","tags":["js","basic"],"created":"2024-06-12T11:06:57.589+08:00","updated":"2024-06-20T17:32:48.647+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/lexical-context-closure/","title":"javascript 从词法环境角度来解释执行上下文，this指向，以及闭包.","tags":["js","basic"],"created":"2024-08-07T13:13:05.062+08:00","updated":"2024-09-16T21:02:51.782+08:00"}
 ---
 
 原博文地址：[Li Mei](https://limeii.github.io/#blog)
@@ -12,9 +12,7 @@
 3. 生成cpu执行的机器码
 词法环境就是第一步中执行，==它用来登记变量声明、函数声明、函数声明的形参，后续代码执行的时候就知道去哪里拿变量的值和函数了，这个登记的地方就是`Lexical Environment（词法环境）`==
 ![Pasted image 20240612111319.png](/img/user/Pasted%20image%2020240612111319.png)
-词法环境：
-+ envRecord: 环境记录
-+ outer: 对外词法引用 
+==词法环境由 envRecord: 环境记录，outer: 对外词法引用 构成== 
 ID: 1718165561782
 
 #### ANKI-变量提升&函数提升
@@ -39,32 +37,31 @@ ID: 1718165561784
 
 
 #### ANKI-什么是作用域链？
-每个词法环境都有一个outer指向上一层的词法环境，沿着outer一层一层词法环境找变量的值就是作用域链。
+每个词法环境都有一个outer指向上一层的词法环境，==沿着(outer一层一层)词法环境找变量的值就是作用域链。==
 当运行上面代码，函数bar的词法环境里没有变量a，所以就会到它的上一层词法环境（foo函数词法环境）里去找，
 foo函数词法环境里也没有变量a，就接着去foo函数词法环境的上一层（全局词法环境）去找，在全局词法环境里var a=2，
 ![Pasted image 20240612112854.png](/img/user/Pasted%20image%2020240612112854.png)
 ID: 1718165561786
 
 #### ANKI-什么是执行上下文？
-![Pasted image 20240612113126.png](/img/user/Pasted%20image%2020240612113126.png)
-==为什么要有两个词法环境：LexicalEnvironment和VariableEnvironment==
-**变量环境组件（VariableEnvironment）**是用来登记`var` `function`变量声明，**词法环境组件（LexicalEnvironment）**是用来登记`let` `const` `class`等变量声明。
-//
-在ES6之前都没有块级作用域，ES6之后我们可以用`let` `const`来声明块级作用域，有这两个词法环境是为了实现块级作用域的同时不影响`var`变量声明和函数声明，具体如下：
-- 1：首先在一个正在运行的执行上下文内，词法环境由LexicalEnvironment和VariableEnvironment构成，用来登记所有的变量声明。
-- 2：当执行到块级代码时候，会先LexicalEnvironment记录下来，记录为oldEnv。
-- 3：创建一个新的LexicalEnvironment（outer指向oldEnv），记录为newEnv，并将newEnv设置为正在执行上下文的LexicalEnvironment。
-- 4：块级代码内的`let` `const`会登记在newEnv里面，但是`var`声明和函数声明还是登记在原来的VariableEnvironment里。
-- 5：块级代码执行结束后，将oldEnv还原为正在执行上下文的LexicalEnvironment。
+首先得提到词法环境是什么（参考文首）。
+构成：
++ 两个词法环境
++ this binding
+==**为什么需要两个词法环境？**==
+**变量环境组件VariableEnvironment**: 是用来登记`var` `function`变量声明，
+**词法环境组件（LexicalEnvironment）**:  是用来登记`let` `const` `class`等变量声明，ES6之后补充。
+在ES6之前都没有块级作用域，ES6之后我们可以用`let` `const`来声明块级作用域，有这两个词法环境是==为了实现块级作用域的同时不影响`var`变量声明和函数声明==
 ID: 1718165561788
 
 
 #### ANKI-执行上下文，词法环境与执行栈的关系？
+==词法环境是执行上下文的组成部分，在代码执行的时候，执行上下文会被压入执行栈中，按照先进后出的原则执行==，具体如下：
 JS引擎是按照可执行代码来执行代码的，每次执行步骤如下
 1：创建一个新的执行上下文（Execution Context）
 2：创建一个新的词法环境（Lexical Environment）
 3：把LexicalEnvironment和VariableEnvironment指向新创建的词法环境
-4：把这个执行上下文压入执行栈并成为正在运行的执行上下文
+4：把这个==执行上下文压入执行栈==并成为正在运行的执行上下文
 5：执行代码
 6：执行结束后，把这个执行上下文弹出执行栈
 ```javascript
