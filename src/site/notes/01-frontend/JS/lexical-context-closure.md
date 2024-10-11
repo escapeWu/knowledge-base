@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/lexical-context-closure/","title":"javascript 从词法环境角度来解释执行上下文，this指向，以及闭包.","tags":["js","basic"],"created":"2024-08-07T13:13:05.062+08:00","updated":"2024-09-16T21:02:51.782+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/lexical-context-closure/","title":"javascript 从词法环境角度来解释执行上下文，this指向，以及闭包.","tags":["js","basic"],"created":"2024-09-18T14:20:16.919+08:00","updated":"2024-09-30T10:50:34.207+08:00"}
 ---
 
 原博文地址：[Li Mei](https://limeii.github.io/#blog)
@@ -45,9 +45,18 @@ ID: 1718165561786
 
 #### ANKI-什么是执行上下文？
 首先得提到词法环境是什么（参考文首）。
-构成：
+**类型**：
++ 全局执行上下文
++ 函数执行上下文
++ Eval 执行上下文
+==构成==：
 + 两个词法环境
+	+ **变量环境组件VariableEnvironment**
+	+ **词法环境组件（LexicalEnvironment）**
 + this binding
+有人会将 两个词法环境拆解为具体表现组件：
++ **变量对象**：包含了函数的所有形参，内部变量和函数声明
++ **作用域链**：用来解析变量，包含当前上下文的变量对象以及所有父级上下文的变量对象
 ==**为什么需要两个词法环境？**==
 **变量环境组件VariableEnvironment**: 是用来登记`var` `function`变量声明，
 **词法环境组件（LexicalEnvironment）**:  是用来登记`let` `const` `class`等变量声明，ES6之后补充。
