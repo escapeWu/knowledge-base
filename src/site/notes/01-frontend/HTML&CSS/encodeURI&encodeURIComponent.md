@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/html-and-css/encode-uri-and-encode-uri-component/","created":"2024-05-30T22:52:49.344+08:00","updated":"2024-05-30T17:41:19.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/html-and-css/encode-uri-and-encode-uri-component/","created":"2024-09-18T14:20:16.727+08:00","updated":"2024-05-30T17:41:19.000+08:00"}
 ---
 
 #### ANKI-encodeURI&encodeURIComponent的区别
