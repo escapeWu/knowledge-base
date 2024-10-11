@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/06-tools/obsidian/digital-garden-excalidraw-usage/","created":"2024-05-27T15:37:51.443+08:00","updated":"2024-05-27T15:03:24.000+08:00"}
+{"dg-publish":true,"permalink":"/06-tools/obsidian/digital-garden-excalidraw-usage/","created":"2024-09-18T14:20:21.657+08:00","updated":"2024-05-27T15:03:24.000+08:00"}
 ---
 
 2024-1-16: 
