@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/vue/nuxt-vue-deploy-diff/","created":"2024-06-04T23:27:38.537+08:00","updated":"2024-06-04T11:05:07.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/vue/nuxt-vue-deploy-diff/","created":"2024-09-18T14:20:17.779+08:00","updated":"2024-06-04T11:05:07.000+08:00"}
 ---
 
 其实想问，SSR（Server Side Render）和 SPA (Single Page Application) 部署的区别。
