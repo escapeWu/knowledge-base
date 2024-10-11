@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/html-and-css/position-relative-and-static/","title":"position relative 和 static 的区别","created":"2024-09-19T14:40:56.703+08:00","updated":"2024-09-19T14:40:04.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/html-and-css/position-relative-and-static/","title":"position relative 和 static 的区别","created":"2024-09-19T14:25:46.226+08:00","updated":"2024-09-19T14:40:04.039+08:00"}
 ---
 
 #### ANKI-position relative 和 static 的区别？
