@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/html-and-css/html-and-css-basic/","created":"2024-09-19T15:28:27.139+08:00","updated":"2024-09-21T23:57:41.007+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/html-and-css/html-and-css-basic/","created":"2024-09-21T23:58:36.966+08:00","updated":"2024-10-11T11:15:00.753+08:00"}
 ---
 
 #### ANKI-常见元素种类有哪些？
@@ -226,9 +226,8 @@ ID: 1717061092137
 触发`BFC`的条件包含不限于：
 - 浮动元素：float值为left、right
 - position的值为absolute或fixed
-- overflow值不为 visible，为 auto、scroll、hidden
+- overflow值为 auto、scroll、hidden
 - flex和grid布局， diplay和table相关的，比如table, table-cell等
-
 **BFC 形成后，会有什么渲染规则？**
 - 内部的盒子会在垂直方向上一个接一个的放置
 - 同一个BFC的俩个相邻的盒子的margin会发生重叠，与方向无关。
@@ -238,10 +237,9 @@ ID: 1717061092137
 - BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素，反之亦然
 **应用**：
 1. 阻止margin重叠
-2. 可以包含浮动元素 —— 清除内部浮动(清除浮动的原理是两个div都位于同一个 BFC 区域之中)
-3. 可以阻止元素被浮动元素覆盖
-	1. 浮动元素会影响兄弟元素的位置，具体地说就是浮动之后脱离了文档流，使得兄弟元素上移填补空缺，而这会使得它被浮动元素覆盖
-	2. 但是触发了兄弟元素的 BFC 后，兄元素将不会被浮动的元素覆盖 ———— 不会被覆盖，意味着兄弟元素出现在浮动元素的旁边或者下面，具体取决于父元素的宽度
+2. 浮动元素清除
+3. 自适应容器
+4. 隔离float元素
 ID: 1717061092139
 
 
@@ -348,8 +346,8 @@ ID: 1717061092141
 1. **grid-column 和 grid-row**: 这些属性用于放置Grid项。它们允许我们指定Grid项跨越多少列和行。
    ```css
    .item {
-       grid-column: 1 / 3;
-       grid-row: 1 / 2;
+       grid-column: 1 / 3; // 表示元素的列位置从第 1 列开始，跨越到第 3 列（不包括第 3 列），因此它会占据第 1 列和第 2 列的位置。
+       grid-row: 1 / 2; // 表示元素的行位置从第 1 行开始，到第 2 行结束（不包括第 2 行），因此它只占据第 1 行的位置
    }
    ```
 2. **grid-area**: 这个属性可以同时定义Grid项的行和列的起始和结束位置。
