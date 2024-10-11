@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/04-algo/binary-tree-type/","title":"常见二叉树类型","created":"2024-08-12T15:59:49.305+08:00","updated":"2024-08-12T15:59:11.000+08:00"}
+{"dg-publish":true,"permalink":"/04-algo/binary-tree-type/","title":"常见二叉树类型","created":"2024-09-18T14:20:21.043+08:00","updated":"2024-08-12T15:59:11.000+08:00"}
 ---
 
 #### ANKI-常见二叉树的类型
