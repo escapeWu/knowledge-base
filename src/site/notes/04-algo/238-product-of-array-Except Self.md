@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/04-algo/238-product-of-array-except-self/","title":"除自身以外数组的乘积","tags":["algo","array","prefix-sum"],"created":"2024-09-21T23:37:39.104+08:00","updated":"2024-09-21T23:57:51.130+08:00"}
+{"dg-publish":true,"permalink":"/04-algo/238-product-of-array-except-self/","title":"除自身以外数组的乘积","tags":["algo","array","prefix-sum"],"created":"2024-09-21T23:58:36.979+08:00","updated":"2024-09-21T23:57:51.000+08:00"}
 ---
 
 #### ANKI-除自身以外数组的乘积
