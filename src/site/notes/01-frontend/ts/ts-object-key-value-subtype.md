@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/ts/ts-object-key-value-subtype/","title":"ts中使用typeof keyof 实现获取某一个对象的所有key value作为类型","tags":["typescript","Generics"],"created":"2024-07-03T16:24:15.837+08:00","updated":"2024-09-21T23:59:29.038+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/ts/ts-object-key-value-subtype/","title":"ts中使用typeof keyof 实现获取某一个对象的所有key value作为类型","tags":["typescript","Generics"],"created":"2024-09-21T23:59:36.813+08:00","updated":"2024-09-21T23:59:29.000+08:00"}
 ---
 
 #### ANKI-ts中使用typeof keyof 实现获取某一个对象的所有key value
