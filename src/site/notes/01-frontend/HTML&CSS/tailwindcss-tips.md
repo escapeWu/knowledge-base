@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/html-and-css/tailwindcss-tips/","created":"2024-06-17T10:25:14.421+08:00","updated":"2024-06-17T10:24:15.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/html-and-css/tailwindcss-tips/","created":"2024-09-18T14:20:16.767+08:00","updated":"2024-06-17T10:24:15.000+08:00"}
 ---
 
 
