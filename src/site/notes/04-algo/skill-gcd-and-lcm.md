@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/04-algo/skill-gcd-and-lcm/","title":"最小公倍数，最大公约数","tags":["algo","gcd","lcm"],"created":"2024-09-17T18:43:10.525+08:00","updated":"2024-09-17T19:14:48.914+08:00"}
+{"dg-publish":true,"permalink":"/04-algo/skill-gcd-and-lcm/","title":"最小公倍数，最大公约数","tags":["algo","gcd","lcm"],"created":"2024-09-18T14:20:21.182+08:00","updated":"2024-09-17T19:14:48.000+08:00"}
 ---
 
 #### ANKI-最大公约数
