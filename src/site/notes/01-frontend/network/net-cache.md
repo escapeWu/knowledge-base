@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/network/net-cache/","title":"HTTP - 缓存","tags":["cache","http","interview"],"created":"2024-08-07T13:20:05.109+08:00","updated":"2024-09-16T22:09:59.392+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/network/net-cache/","title":"HTTP - 缓存","tags":["cache","http","interview"],"created":"2024-09-18T14:20:18.384+08:00","updated":"2024-09-16T22:09:59.000+08:00"}
 ---
 
 #### ANKI-浏览器缓存流程：
