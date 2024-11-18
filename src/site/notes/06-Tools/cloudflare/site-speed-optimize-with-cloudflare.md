@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/06-tools/cloudflare/site-speed-optimize-with-cloudflare/","created":"2024-09-18T14:20:21.872+08:00","updated":"2024-06-07T15:45:50.000+08:00"}
+{"dg-publish":true,"permalink":"/06-tools/cloudflare/site-speed-optimize-with-cloudflare/","created":"2024-06-07T15:45:50.000+08:00","updated":"2024-06-07T15:45:50.000+08:00"}
 ---
 
 
