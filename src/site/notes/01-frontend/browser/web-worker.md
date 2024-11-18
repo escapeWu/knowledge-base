@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/browser/web-worker/","title":"浏览器中web-worker 简单使用示例，及场景介绍","tags":["js","browser","web-worker"],"created":"2024-09-18T14:20:18.077+08:00","updated":"2024-10-11T11:17:47.469+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/browser/web-worker/","title":"浏览器中web-worker 简单使用示例，及场景介绍","tags":["js","browser","web-worker"],"created":"2024-10-23T10:49:57.000+08:00","updated":"2024-10-23T10:49:57.000+08:00"}
 ---
 
 
@@ -46,7 +46,8 @@ ID: 1717729489020
 
 #### ANKI-webwoker 使用场景：文件打包压缩
 简化场景：本地上传文件，压缩为zip后下载。压缩操作占用性能，使用webworker 单独处理
-![Pasted image 20241010180106.png](/img/user/Pasted%20image%2020241010180106.png)
-[github-常规版本](https://stackblitz.com/~/github.com/escapeWu/webworker-imgs2zip/tree/main?file=src/App.tsx)
-[github-webworker](https://stackblitz.com/~/github.com/escapeWu/webworker-imgs2zip/tree/feat-webwork?file=src/App.tsx)
+![Pasted image 20241010180106.png](/img/user/attachments/Pasted%20image%2020241010180106.png)
++ [github-常规版本](https://stackblitz.com/~/github.com/escapeWu/webworker-imgs2zip/tree/main?file=src/App.tsx)
++ [github-webworker](https://stackblitz.com/~/github.com/escapeWu/webworker-imgs2zip/tree/feat-webwork?file=src/App.tsx)
++ https://v3.vitejs.dev/guide/features.html#import-with-query-suffixes
 ID: 1728616667403
