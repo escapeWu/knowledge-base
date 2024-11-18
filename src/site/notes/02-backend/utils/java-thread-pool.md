@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/02-backend/utils/java-thread-pool/","created":"2024-09-18T14:20:19.686+08:00","updated":"2024-05-27T15:04:10.000+08:00"}
+{"dg-publish":true,"permalink":"/02-backend/utils/java-thread-pool/","created":"2024-05-27T15:04:10.000+08:00","updated":"2024-05-27T15:04:10.000+08:00"}
 ---
 
 线程池并发任务执行
