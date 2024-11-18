@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/html-and-css/html-and-css-basic/","created":"2024-09-21T23:58:36.966+08:00","updated":"2024-10-11T11:15:00.753+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/html-and-css/html-and-css-basic/","created":"2024-10-23T14:39:05.000+08:00","updated":"2024-10-23T14:39:05.000+08:00"}
 ---
 
 #### ANKI-常见元素种类有哪些？
@@ -231,7 +231,6 @@ ID: 1717061092137
 **BFC 形成后，会有什么渲染规则？**
 - 内部的盒子会在垂直方向上一个接一个的放置
 - 同一个BFC的俩个相邻的盒子的margin会发生重叠，与方向无关。
-- 每个元素的左外边距与包含块的左边界相接触（从左到右），即使浮动元素也是如此
 - BFC的区域不会与float的元素区域重叠
 - 计算BFC的高度时，浮动子元素也参与计算 [[01-frontend/HTML&CSS/css浮动 与 BFC\|css浮动 与 BFC]]
 - BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素，反之亦然
@@ -319,7 +318,7 @@ ID: 1717061092141
 
 
 #### ANKI-说下你理解的Grid 布局？
-[MDN GRID 常用布局场景参考](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_grid_layout/Realizing_common_layouts_using_grids#%E4%BD%BF%E7%94%A8%E7%BD%91%E6%A0%BC%E6%A8%A1%E6%9D%BF%E5%8C%BA%E5%9F%9F%E7%9A%84%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80%EF%BC%8C%E5%8C%85%E5%90%AB_1_%E5%88%B0_3_%E4%B8%AA%E6%B5%81%E5%8A%A8%E5%88%97)
+[GRID 布局详细说明](https://juejin.cn/post/7160485893810667534)
 `grid-template-areas, grid-template-rows, grid-template-colums, grid-gap, grid-colum, grid-row`
 ==基本概念==
 1. **Grid Container**: 任何一个元素都可以成为Grid容器，只需要在其CSS中设置`display: grid`或`display: inline-grid`。Grid容器会包含所有的Grid项。
