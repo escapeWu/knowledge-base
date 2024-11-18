@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/network/cdn-what-is-caching/","title":"什么是cdn？","created":"2024-09-18T14:20:18.291+08:00","updated":"2024-06-04T11:20:59.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/network/cdn-what-is-caching/","title":"什么是cdn？","created":"2024-06-04T11:20:59.000+08:00","updated":"2024-06-04T11:20:59.000+08:00"}
 ---
 
 https://www.cloudflare-cn.com/learning/cdn/what-is-caching/
 
 #### ANKI-什么是CDN
-![Pasted image 20240604103443.png](/img/user/Pasted%20image%2020240604103443.png)
+![Pasted image 20240604103443.png](/img/user/attachments/Pasted%20image%2020240604103443.png)
 CDN（内容交付网络）将图像、视频或网页等内容缓存在比[源站服务器](https://www.cloudflare-cn.com/learning/cdn/glossary/origin-server/)更靠近最终用户的代理服务器中。（代理服务器是一种从[客户端](https://www.cloudflare-cn.com/learning/serverless/glossary/client-side-vs-server-side/)接收请求并将其传递给其他服务器的服务器。）由于这些服务器距离发出请求的用户较近，因此 CDN 能够更快地交付内容。
 //
 CDN 可以比作连锁杂货店：购物者不必前往可能数百英里远种植有粮食的农场，而是去当地的杂货店，尽管仍然需要走些路，但距离要近得多。由于杂货店储藏来自远方农场的食品，因此去杂货店购买只需花费几分钟而不是几天。同样，CDN 缓存可以“储藏”Internet 上显示的内容，让网页加载速度变得更快。
