@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/html-and-css/why-translate-instead-of-position/","created":"2024-09-23T10:00:33.493+08:00","updated":"2024-09-30T10:50:37.204+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/html-and-css/why-translate-instead-of-position/","title":"为什么有时候使用translate而不是position？","created":"2024-10-12T13:58:00.000+08:00","updated":"2024-10-12T13:58:00.000+08:00"}
 ---
 
 #### ANKI-为什么有时候使用translate而不是position？
