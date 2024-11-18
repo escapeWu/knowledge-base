@@ -1,17 +1,17 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/lexical-context-closure/","title":"javascript 从词法环境角度来解释执行上下文，this指向，以及闭包.","tags":["js","basic"],"created":"2024-09-18T14:20:16.919+08:00","updated":"2024-09-30T10:50:34.207+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/lexical-context-closure/","title":"javascript 从词法环境角度来解释执行上下文，this指向，以及闭包.","tags":["js","basic"],"created":"2024-09-30T10:50:34.000+08:00","updated":"2024-11-18T10:53:48.602+08:00"}
 ---
 
 原博文地址：[Li Mei](https://limeii.github.io/#blog)
 完整笔记
-![Pasted image 20240620173247.png](/img/user/Pasted%20image%2020240620173247.png)
+![Pasted image 20240620173247.png](/img/user/attachments/Pasted%20image%2020240620173247.png)
 #### ANKI-什么是词法环境?
 在v8引擎里JS的编译过程：
 1. 分词/词法分析（tokenizing/lexing） 
 2. token -> AST 抽象
 3. 生成cpu执行的机器码
 词法环境就是第一步中执行，==它用来登记变量声明、函数声明、函数声明的形参，后续代码执行的时候就知道去哪里拿变量的值和函数了，这个登记的地方就是`Lexical Environment（词法环境）`==
-![Pasted image 20240612111319.png](/img/user/Pasted%20image%2020240612111319.png)
+![Pasted image 20240612111319.png](/img/user/attachments/Pasted%20image%2020240612111319.png)
 ==词法环境由 envRecord: 环境记录，outer: 对外词法引用 构成== 
 ID: 1718165561782
 
@@ -32,7 +32,7 @@ functionDec();
 对于函数声明function functionDec(){...}，
     1. 会在内存里创建函数对象
     2. 直接初始化为该函数对象。
-![Pasted image 20240612112035.png](/img/user/Pasted%20image%2020240612112035.png)
+![Pasted image 20240612112035.png](/img/user/attachments/Pasted%20image%2020240612112035.png)
 ID: 1718165561784
 
 
@@ -40,7 +40,7 @@ ID: 1718165561784
 每个词法环境都有一个outer指向上一层的词法环境，==沿着(outer一层一层)词法环境找变量的值就是作用域链。==
 当运行上面代码，函数bar的词法环境里没有变量a，所以就会到它的上一层词法环境（foo函数词法环境）里去找，
 foo函数词法环境里也没有变量a，就接着去foo函数词法环境的上一层（全局词法环境）去找，在全局词法环境里var a=2，
-![Pasted image 20240612112854.png](/img/user/Pasted%20image%2020240612112854.png)
+![Pasted image 20240612112854.png](/img/user/attachments/Pasted%20image%2020240612112854.png)
 ID: 1718165561786
 
 #### ANKI-什么是执行上下文？
@@ -65,32 +65,30 @@ ID: 1718165561788
 
 
 #### ANKI-执行上下文，词法环境与执行栈的关系？
-==词法环境是执行上下文的组成部分，在代码执行的时候，执行上下文会被压入执行栈中，按照先进后出的原则执行==，具体如下：
-JS引擎是按照可执行代码来执行代码的，每次执行步骤如下
-1：创建一个新的执行上下文（Execution Context）
-2：创建一个新的词法环境（Lexical Environment）
-3：把LexicalEnvironment和VariableEnvironment指向新创建的词法环境
-4：把这个==执行上下文压入执行栈==并成为正在运行的执行上下文
-5：执行代码
-6：执行结束后，把这个执行上下文弹出执行栈
-```javascript
-var a;
-function foo() {
-    a = "hi, i am foo";
-    console.log(a);
+执行上下文的构成如下：
++ this
++ 词法环境：处理作用域，let const 变量
+	+ 环境记录：EnvRecord
+	+ 外部词法环境引用：OuterReference
+		+ 用于访问外层执行上下文的词法环境，从而形成作用域链
++ 变量环境：var 声明的变量
+
+![Pasted image 20240612113521.png](/img/user/attachments/Pasted%20image%2020240612113521.png)ObjectEnvironmentRecord 和 DeclarativeEnvironmentRecord 的区别
++ ObjectEnvironmentRecord: 用于将特定对象的属性与作用域相连，典型用例是全局对象（如 window）或者 with 语句
++ DeclarativeEnvironmentRecord: 用于存储局部变量、参数和函数声明。在 function 或 block 作用域中声明的变量（如 let、const、var 等）都存储在 DeclarativeEnvironmentRecord 中。
+```js
+// ObjectEnviromentRecord
+var name = "Alice";
+function showGlobalName() {
+    console.log(name);
 }
-function baz() {
-    foo();
+// DeclarativeEnviromnentRecord
+function showLocalName() {
+	var name = "Bob"
+	console.log(name)
 }
-baz();
 ```
-前面的代码在执行完1-4步以后，整个环境看起来是这样的：
-![Pasted image 20240612113521.png](/img/user/Pasted%20image%2020240612113521.png)
-> 可执行代码（Executable Code）
-> global code：整个js文件。
-> function code：函数代码。
-> module：模块代码
-> eval code：放在eval的代码。 
+==词法环境是执行上下文的组成部分，在代码执行的时候，执行上下文会被压入执行栈中，按照先进后出的原则执行==
 ID: 1718165561790
 
 
