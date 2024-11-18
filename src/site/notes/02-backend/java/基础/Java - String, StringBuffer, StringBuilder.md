@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/02-backend/java//java-string-string-buffer-string-builder/","title":"java中 String, StringBuffer, StringBuilder 的区别？","created":"2024-09-21T23:58:36.973+08:00","updated":"2024-09-21T23:57:51.000+08:00"}
+{"dg-publish":true,"permalink":"/02-backend/java//java-string-string-buffer-string-builder/","title":"java中 String, StringBuffer, StringBuilder 的区别？","created":"2024-09-21T23:57:51.000+08:00","updated":"2024-09-21T23:57:51.000+08:00"}
 ---
 
 #### ANKI-java中 String, StringBuffer, StringBuilder 的区别？
