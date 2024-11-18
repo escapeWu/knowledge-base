@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/06-tools/docker/docker-compose-depends-on/","title":"docker compose 下通过depends on + health check 解决 挂载网盘目录被其他容器抢先生成目录","created":"2024-09-18T14:20:21.268+08:00","updated":"2024-06-18T15:31:32.000+08:00"}
+{"dg-publish":true,"permalink":"/06-tools/docker/docker-compose-depends-on/","title":"docker compose 下通过depends on + health check 解决 挂载网盘目录被其他容器抢先生成目录","created":"2024-06-18T15:31:32.000+08:00","updated":"2024-06-18T15:31:32.000+08:00"}
 ---
 
 问题描述：
