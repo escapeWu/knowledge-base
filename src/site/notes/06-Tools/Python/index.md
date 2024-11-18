@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/06-tools/python/index/","created":"2024-09-18T14:20:21.861+08:00","updated":"2024-05-27T15:03:25.000+08:00"}
+{"dg-publish":true,"permalink":"/06-tools/python/index/","created":"2024-05-27T15:03:25.000+08:00","updated":"2024-05-27T15:03:25.000+08:00"}
 ---
 
 Python 作为效率工具常用的api 整理
