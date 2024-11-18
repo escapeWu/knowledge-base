@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/ts/ts-object-key-value-subtype/","title":"ts中使用typeof keyof 实现获取某一个对象的所有key value作为类型","tags":["typescript","Generics"],"created":"2024-09-21T23:59:36.813+08:00","updated":"2024-09-21T23:59:29.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/ts/ts-object-key-value-subtype/","title":"ts中使用typeof keyof 实现获取某一个对象的所有key value作为类型","tags":["typescript","Generics"],"created":"2024-10-23T11:02:53.000+08:00","updated":"2024-10-23T11:02:53.000+08:00"}
 ---
 
 #### ANKI-ts中使用typeof keyof 实现获取某一个对象的所有key value
@@ -11,6 +11,8 @@ const GNSS = {
   GALILEO: "E",  
   GLONASS: "R"  
 } as const // as const 可以让gnss 的key不会变成string
+// gnssKeyType: `"BDS" | "GLONASS" | "GALILEO" | "GPS"`
+// gnssValueType:  `"C" | "R" | "E" | "G"`
 ```
 [typeof](https://www.typescriptlang.org/docs/handbook/2/typeof-types.html)： 引用变量或属性的类型
 keyof: 输入对象类型 输出其key的 string | number  集合
