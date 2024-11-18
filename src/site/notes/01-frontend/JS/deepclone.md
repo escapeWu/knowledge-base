@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/deepclone/","title":"JS 深拷贝的几种方式","tags":["WeakSet","basic","interview"],"created":"2024-09-18T14:20:16.894+08:00","updated":"2024-06-11T09:32:37.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/deepclone/","title":"JS 深拷贝的几种方式","tags":["WeakSet","basic","interview"],"created":"2024-06-11T09:32:37.000+08:00","updated":"2024-06-11T09:32:37.000+08:00"}
 ---
 
 
