@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/07-life/karabiner-elements-mouse-mapping/","title":"karabiner-elements鼠标侧键映射方案","created":"2024-09-18T14:20:22.003+08:00","updated":"2024-07-12T10:43:28.000+08:00"}
+{"dg-publish":true,"permalink":"/07-life/karabiner-elements-mouse-mapping/","title":"karabiner-elements鼠标侧键映射方案","created":"2024-07-12T10:43:28.000+08:00","updated":"2024-07-12T10:43:28.000+08:00"}
 ---
 
 
