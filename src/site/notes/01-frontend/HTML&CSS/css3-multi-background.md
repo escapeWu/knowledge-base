@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/html-and-css/css3-multi-background/","created":"2024-09-23T10:11:10.825+08:00","updated":"2024-09-30T10:50:37.216+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/html-and-css/css3-multi-background/","created":"2024-09-30T10:50:37.000+08:00","updated":"2024-09-30T10:50:37.000+08:00"}
 ---
 
 #### ANKi-如何为一个元素设置多个背景图片，并控制多个图片的位置
@@ -19,9 +19,9 @@
 - **`background-repeat`**：控制背景图片是否重复。
 
 #### ANKI-border-image 边框图片如何做
-![Pasted image 20240923102239.png](/img/user/Pasted%20image%2020240923102239.png)， 宽度为30px
+![Pasted image 20240923102239.png](/img/user/attachments/Pasted%20image%2020240923102239.png)， 宽度为30px
 假设有上述图片，希望实现效果如下
-![Pasted image 20240923102307.png](/img/user/Pasted%20image%2020240923102307.png)
+![Pasted image 20240923102307.png](/img/user/attachments/Pasted%20image%2020240923102307.png)
 ```css
 border-image: url('/media/examples/border-diamonds.png') 30/19px round;
 ```
