@@ -1,8 +1,6 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/utils/imglist-zip/","title":"图片批量压缩下载","tags":["implement"],"created":"2024-09-18T14:20:18.784+08:00","updated":"2024-06-04T13:25:16.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/utils/imglist-zip/","title":"图片批量压缩下载","tags":["implement"],"created":"2024-10-25T10:23:22.000+08:00","updated":"2024-10-25T10:23:22.000+08:00"}
 ---
-
-## TODO add webworker
 
 ## source code
 
@@ -64,3 +62,6 @@ imgList -> 并发请求 -> fileList -> zip all File[JSZip] -> download file[`Fil
 - getFile：封装 xhr 请求为 Promise，设置返回值类型为`blob`
 - zipFile：使用`JSZip：zip.file()` 挨个添加图片到 zip 实例
 - 调用`JSZip: generateAsync`生成 blob 类型数据，并使用 FileSaver 进行保存
+
+## webworker 版本
+[[01-frontend/browser/web-worker\|web-worker]]
