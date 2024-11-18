@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/utils/index/","created":"2024-09-18T14:20:18.788+08:00","updated":"2024-06-04T11:13:00.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/utils/index/","created":"2024-06-04T11:13:00.000+08:00","updated":"2024-06-04T11:13:00.000+08:00"}
 ---
 
 + [[01-frontend/utils/utils-promise-concurrent\|utils-promise-concurrent]]
