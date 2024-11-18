@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/03-projects/ai-visual/tensor-rt/","created":"2024-09-18T14:20:20.306+08:00","updated":"2024-05-27T15:03:23.000+08:00"}
+{"dg-publish":true,"permalink":"/03-projects/ai-visual/tensor-rt/","created":"2024-05-27T15:03:23.000+08:00","updated":"2024-05-27T15:03:23.000+08:00"}
 ---
 
 
