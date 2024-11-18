@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/debounce-and-throttle/","title":"防抖节流知多少","tags":["utils","js"],"created":"2024-09-18T14:20:16.834+08:00","updated":"2024-07-03T16:05:53.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/debounce-and-throttle/","title":"防抖节流知多少","tags":["utils","js"],"created":"2024-07-03T16:05:53.000+08:00","updated":"2024-07-03T16:05:53.000+08:00"}
 ---
 
 #js #utils 
