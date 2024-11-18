@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/02-backend/idea/idea-maven/","created":"2024-09-18T14:20:19.178+08:00","updated":"2024-05-27T15:04:09.000+08:00"}
+{"dg-publish":true,"permalink":"/02-backend/idea/idea-maven/","created":"2024-05-27T15:04:09.000+08:00","updated":"2024-05-27T15:04:09.000+08:00"}
 ---
 
 ![Pasted image 20240226162903.png](/img/user/attachments/Pasted%20image%2020240226162903.png)
