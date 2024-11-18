@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/network/net-cache/","title":"HTTP - 缓存","tags":["cache","http","interview"],"created":"2024-09-18T14:20:18.384+08:00","updated":"2024-09-16T22:09:59.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/network/net-cache/","title":"HTTP - 缓存","tags":["cache","http","interview"],"created":"2024-09-16T22:09:59.000+08:00","updated":"2024-09-16T22:09:59.000+08:00"}
 ---
 
 #### ANKI-浏览器缓存流程：
@@ -97,9 +97,9 @@ cache-control: max-age=3600, s-maxage=31536000
 - **no-cache：**绕开浏览器缓存（每次发起请求不会询问浏览器缓存），而是直接向服务器确认该缓存是够过期。
 
 利用 cache control 提供的字段可以实现一套完整的缓存策略
-![Pasted image 20240604105540.png](/img/user/Pasted%20image%2020240604105540.png)
+![Pasted image 20240604105540.png](/img/user/attachments/Pasted%20image%2020240604105540.png)
 ## 协商缓存
-![Pasted image 20240604105658.png](/img/user/Pasted%20image%2020240604105658.png)
+![Pasted image 20240604105658.png](/img/user/attachments/Pasted%20image%2020240604105658.png)
 
 协商缓存流程：
 
