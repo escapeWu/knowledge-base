@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/utils/utils-tree-path-find/","created":"2024-09-18T14:20:18.972+08:00","updated":"2024-07-03T17:04:27.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/utils/utils-tree-path-find/","created":"2024-07-03T17:04:27.000+08:00","updated":"2024-07-03T17:04:27.000+08:00"}
 ---
 
 [[A 前端\|A 前端]] #utils #tree
