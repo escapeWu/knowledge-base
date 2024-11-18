@@ -1,8 +1,15 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/basic/","title":"JS 基础","created":"2024-09-18T14:20:16.830+08:00","updated":"2024-09-23T17:46:58.593+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/basic/","title":"JS 基础","created":"2024-10-25T11:28:42.000+08:00","updated":"2024-11-07T15:36:36.994+08:00"}
 ---
 
  #js 
+
+#### isNaN 和 Number.isNaN 的区别
+isNaN会做隐式转换，尝试转换成数字，Number.isNaN 不会，比如
+```js
+console.log(isNaN('hello'));//---> isNaN(NaN) ---> true 
+console.log(Number.isNaN('hello'));// ---> true
+```
 #### ANKI-原始值与引用值的定义？
 ==原始值(primitive value)就是最简单的数据==,
 ==引用值(referencevalue)是保存在堆heap中对象==。JavaScript不论许直接访问内存位置,因此也就不能直接操作对象所在的内存空间。在操作对象时,实际上操作的是对该对象的引用(reference)而非实际的对象本身。为此,保存引用值的变量是按引用(byreference)访问的。
@@ -124,4 +131,53 @@ undefined 介绍
   - 从逻辑上讲，null 值表示一个空对象指针，所以`typeof null === object`
   - 在定义将来要保存对象值的变量时，建议使用 null 来初始化。
 
+
+#### ANKI-&&操作符
+1.对第一个操作数进行条件判断。
+2.如果第一个操作数的条件判断结果为false,则返回第一个个操作数的值。
+3.如果第一个操作数的条件判断结果为true,则返回第二个操作数的值。
+```js
+0 && 1 --> 0
+'' && 1 --> ''
+1 && 0 --> 0
+1 && '' -> ''
+```
+ID: 1729763764384
+
+
+#### Object.is 和 === 的区别是什么？
++ Object.is：-0 和 +0不相等，两个NaN相等
++ `===`: -0 和 +0 相等，NaN不相等 
+
+#### ANKI-+0和-0的区别
+**除法操作**：
+- `1 / +0` 会返回 `Infinity`（正无穷大）。
+- `1 / -0` 会返回 `-Infinity`（负无穷大）。
+Math.sign:
+```js
+Math.sign(+0); // 返回 0
+Math.sign(-0); // 返回 -0
+```
+ID: 1729763764388
+
+#### ANKI-BigInt 的使用场景？
+js 最大安全整数是 `2^53-1` ，再大会丢失精度，所以推荐在值大于 2^53-1 的情况，再使用BigInt 类型，并且不在这两种类型间互相转换
+BigInt的使用方式：
+`const bigInt1 = 123456789012345678901234567890n`
+ID: 1729763764390
+
+#### ANKI-Object.assign 和 对象扩展运算符`...`的区别是什么
+Object.assign和对象扩展运算符`...`都是执行浅拷贝,即只复制对象的第一层属性,不会递归复制整个对象结构。对于需要深拷贝的情况,需要要额外的处理逻辑来实现。
+ID: 1729826922042
+
+
+#### ANKI-什么是javaScript的类数组对象？如何转换为数组？
+类数组：具备 `length` 和 按索引存储的元素，比如
+```js
+const arrayLike = {'0': 'a', '1': 'b', '2': 'c'}
+```
+将类数组转换为数组
++ Array.from
++ 扩展运算符 `...`
+ID: 1729826922043
 
