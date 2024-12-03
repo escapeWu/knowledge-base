@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/react/react-core/","title":"react 核心深入知识","created":"2024-11-13T14:10:27.113+08:00","updated":"2024-11-13T14:55:18.206+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/react/react-core/","title":"react 核心深入知识","tags":["react","frontend"],"created":"2024-11-13T14:10:27.113+08:00","updated":"2024-12-02T15:00:50.052+08:00"}
 ---
 
 #### ANKI-什么是React Fiber
