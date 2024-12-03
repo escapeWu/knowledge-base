@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/build/webpack-package/","title":"webpack 多js压缩成一个bundle.js","created":"2024-09-16T21:52:27.000+08:00","updated":"2024-09-16T21:52:27.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/build/webpack-package/","title":"webpack 多js压缩成一个bundle.js","tags":["webpack","frontend"],"created":"2024-09-16T21:52:27.000+08:00","updated":"2024-12-02T14:51:05.412+08:00"}
 ---
 
 ```js
