@@ -1,15 +1,17 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/basic/","title":"JS 基础","created":"2024-10-25T11:28:42.000+08:00","updated":"2024-11-07T15:36:36.994+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/basic/","title":"JS 基础","tags":["js","basic"],"created":"2024-10-25T11:28:42.000+08:00","updated":"2024-12-02T14:54:37.773+08:00"}
 ---
 
- #js 
 
-#### isNaN 和 Number.isNaN 的区别
+
+#### ANKI-isNaN 和 Number.isNaN 的区别
 isNaN会做隐式转换，尝试转换成数字，Number.isNaN 不会，比如
 ```js
 console.log(isNaN('hello'));//---> isNaN(NaN) ---> true 
 console.log(Number.isNaN('hello'));// ---> true
 ```
+ID: 1731994038439
+
 #### ANKI-原始值与引用值的定义？
 ==原始值(primitive value)就是最简单的数据==,
 ==引用值(referencevalue)是保存在堆heap中对象==。JavaScript不论许直接访问内存位置,因此也就不能直接操作对象所在的内存空间。在操作对象时,实际上操作的是对该对象的引用(reference)而非实际的对象本身。为此,保存引用值的变量是按引用(byreference)访问的。
@@ -71,7 +73,7 @@ ID: 1716996349482
 
 
 #### 内存泄漏的场景有哪些？
-[[01-frontend/JS/basic\|basic]]
+[[01-frontend/JS/basic\|01-frontend/JS/basic]]
 1. **未正确清除事件监听器**：如果在 DOM 元素上添加了事件监听器，但在元素被删除之前未移除，这可能导致内存泄漏。
 2. **循环引用**：如果对象之间存在相互引用，并且其中一个对象是不再需要的，但由于引用仍然存在，垃圾回收器无法将其清除。
 3. **定时器未被清除**：在使用 `setTimeout()` 或 `setInterval()` 创建定时器时，如果不及时清除，定时器可能会继续运行，引用相关的闭包，导致内存泄漏。
@@ -181,3 +183,53 @@ const arrayLike = {'0': 'a', '1': 'b', '2': 'c'}
 + 扩展运算符 `...`
 ID: 1729826922043
 
+
+#### ANKI-什么是暂时性死区（Temporal Dead Zone）
+使用let const 声明的变量，在申明之前就尝试访问，会抛出错误。
+```js
+function somemethod() {
+  console.log(counter1); // undefined
+  console.log(counter2); // ReferenceError
+  var counter1 = 1;
+  let counter2 = 2;
+}
+```
+ID: 1731994038440
+
+
+#### ANKI-什么是立即执行函数（IIFE，immediately invoked Function Expression）
+
+IIFE最核心的作用是**创建一个立即执行的独立作用域**，从而避免全局变量污染、封装逻辑、保护私有数据。现代开发中，ES Module / CommonJS 存在减少了其使用频率。
+```js
+(function() {
+    var localVar = "I am local";
+    console.log(localVar); // 输出 "I am local"
+})();
+console.log(typeof localVar); // 输出 "undefined"
+```
+ID: 1731994038441
+
+#### ANKI-如何比较两个date对象是否相同
+使用getTime，new Date().getTime() 返回的是自 **1970 年 1 月 1 日 00:00:00 UTC**（也称为 UNIX 时间纪元）以来的毫秒数。
+```js
+var d1 = new Date();
+var d2 = new Date(d1);
+console.log(d1.getTime() === d2.getTime()); //True
+console.log(d1 === d2); // False
+```
+ID: 1732527140431
+
+#### ANKI-介绍下performance.now()函数
+高精度时间戳，以毫秒为单位，从页面创建开始计数。常用于函数性能监控
+```js
+let start = performance.now()
+// logic code
+console.log(performance.now() - start)
+```
+除了performance.now 还有 console.start()，console.end() 可以实现相同效果，但console的方式精度比performace差
+ID: 1732527140436
+
+
+#### ANKI-Corejs 和 Polyfill的关系
+**CoreJs 是 Polyfill 的一种实现方式**：Polyfill 是一个术语，用于描述一段代码，它提供了浏览器中缺失的功能。CoreJs 可以看作是一种全面的 Polyfill 库。当浏览器不支持某个 JavaScript 特性时，CoreJs 可以通过添加相应的代码来模拟该特性，就像填充了浏览器功能的空缺一样。例如，对于`Object.assign`方法，如果浏览器不支持，CoreJs 可以提供一个自定义的函数来实现相同的功能，这个自定义函数就是一种 Polyfill。
+ID: 1732591282597
