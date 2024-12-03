@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/new-underhood/","title":"如何实现一个new操作符","created":"2024-09-19T16:08:36.000+08:00","updated":"2024-09-19T16:08:36.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/new-underhood/","title":"如何实现一个new操作符","tags":["js","frontend"],"created":"2024-09-19T16:08:36.000+08:00","updated":"2024-12-02T14:56:09.286+08:00"}
 ---
 
 #### ANKI-如何实现一个new操作符
