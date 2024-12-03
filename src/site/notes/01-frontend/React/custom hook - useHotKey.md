@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/react/custom-hook-use-hot-key/","created":"2024-05-27T15:04:11.000+08:00","updated":"2024-05-27T15:04:11.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/react/custom-hook-use-hot-key/","title":"react自定义hook-useHotKey","tags":["react","frontend","hook"],"created":"2024-05-27T15:04:11.000+08:00","updated":"2024-12-02T14:59:59.244+08:00"}
 ---
 
 #react #hook
