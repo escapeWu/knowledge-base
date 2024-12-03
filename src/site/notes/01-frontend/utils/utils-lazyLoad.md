@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/utils/utils-lazy-load/","title":"组件懒加载","created":"2024-10-25T11:28:42.000+08:00","updated":"2024-10-25T11:28:42.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/utils/utils-lazy-load/","title":"组件懒加载","tags":["js","frontend"],"created":"2024-10-25T11:28:42.000+08:00","updated":"2024-12-02T15:03:06.907+08:00"}
 ---
 
 #### ANKI-懒加载如何做？
