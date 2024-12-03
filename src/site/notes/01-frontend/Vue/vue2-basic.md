@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/vue/vue2-basic/","created":"2024-06-04T10:17:25.000+08:00","updated":"2024-06-04T10:17:25.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/vue/vue2-basic/","title":"vue基础","tags":["frontend","vue"],"created":"2024-06-04T10:17:25.000+08:00","updated":"2024-12-02T15:04:34.448+08:00"}
 ---
 
 
