@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/event-loop/","title":"js中事件循环是什么？","created":"2024-08-07T13:25:40.000+08:00","updated":"2024-08-07T13:25:40.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/event-loop/","title":"js中事件循环是什么？","tags":["js","frontend"],"created":"2024-08-07T13:25:40.000+08:00","updated":"2024-12-02T14:55:25.859+08:00"}
 ---
 
 #js
