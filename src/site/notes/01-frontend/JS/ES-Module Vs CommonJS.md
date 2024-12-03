@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/es-module-vs-common-js/","title":"ES Module 和 CommonJS 的区别","created":"2024-10-30T13:39:19.000+08:00","updated":"2024-11-07T15:38:12.041+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/es-module-vs-common-js/","title":"ES Module 和 CommonJS 的区别","tags":["js","frontend"],"created":"2024-10-30T13:39:19.000+08:00","updated":"2024-12-02T14:55:09.129+08:00"}
 ---
 
 #### ANKI-ES-Module 和 CommonJS的使用区别
