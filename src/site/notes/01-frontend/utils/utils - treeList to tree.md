@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/utils/utils-tree-list-to-tree/","created":"2024-05-27T15:04:11.000+08:00","updated":"2024-05-27T15:04:11.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/utils/utils-tree-list-to-tree/","title":"tree转换","tags":["utils","frontend"],"created":"2024-05-27T15:04:11.000+08:00","updated":"2024-12-02T15:02:48.363+08:00"}
 ---
 
 #utils #tree
