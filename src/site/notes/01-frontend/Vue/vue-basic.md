@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/vue/vue-basic/","title":"vue基础问题","created":"2024-10-30T15:22:44.000+08:00","updated":"2024-11-11T10:38:47.265+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/vue/vue-basic/","title":"vue基础问题","tags":["vue","frontend"],"created":"2024-10-30T15:22:44.000+08:00","updated":"2024-12-02T15:05:30.596+08:00"}
 ---
 
 #### ANKI-Vue template 标签的作用
@@ -52,81 +52,20 @@ v-cloak 可以隐藏这部分元素
 ![20241030135815_rec_-convert.gif](/img/user/attachments/20241030135815_rec_-convert.gif)
 #### ANKI-vue-pre
 带有这个指令的标签，会跳过编译过程，直接显示为模板那内容
-```html
+```jsx
+// 这里的内容将会直接输出为 {{ rawMustache }} 而不是进行数据绑定
 <div v-pre>
-  {{ rawMustache }}  <!-- 这里的内容将会直接输出为 {{ rawMustache }} 而不是进行数据绑定 -->
+  {{ rawMustache }} 
 </div>
 ```
-
-#### ANKI-vue slot 的类型
-具名插槽
-![Pasted image 20241030141526.png](/img/user/attachments/Pasted%20image%2020241030141526.png)
-```html
-// child
-<div class="container">
-  <header>
-    <slot name="header"></slot>
-  </header>
-  <main>
-    <slot></slot>
-  </main>
-  <footer>
-    <slot name="footer"></slot>
-  </footer>
-</div>
-// parent
-<BaseLayout>
-<!--压缩写法-->
-  <template #header>
-    <h1>Here might be a page title</h1>
-  </template>
-  <!-- 默认插槽,可以直接不写，或者使用 template #default -->
-    <p>A paragraph for the main content.</p>
-    <p>And another one.</p>
-  <!--具名插槽 -->
-  <template v-slot:footer>
-    <p>Here's some contact info</p>
-  </template>
-</BaseLayout>
-```
-条件插槽：
-有时你需要根据插槽是否存在来渲染某些内容。
-```html
-<template>
-  <div class="card">
-    <div v-if="$slots.header" class="card-header">
-      <slot name="header" />
-    </div>
-    <div v-if="$slots.default" class="card-content">
-      <slot />
-    </div>
-    <div v-if="$slots.footer" class="card-footer">
-      <slot name="footer" />
-    </div>
-  </div>
-</template>
-```
-作用域插槽
-允许父组件访问子组件的部分数据。向传递props一样，向一个插槽的出口上传递 attributes
-```html
--------------child-------------
-<!-- <MyComponent> 的模板 -->
-<div>
-  <slot :text="greetingMessage" :count="1"></slot>
-</div>
--------------parent-------------
-<MyComponent v-slot="slotProps">
-  {{ slotProps.text }} {{ slotProps.count }}
-</MyComponent>
-```
-![Pasted image 20241030142317.png](/img/user/attachments/Pasted%20image%2020241030142317.png)
-#### vue 自定义指令的使用方式
+#### ANKI-vue 自定义指令的使用方式
+Vue2
 自定义指令可以通过Vue指令钩子函数实现,主要的钩子函数有以下几种:
 1. bind: 指令绑定到元素时调用,只会执行一次。
-2. inserted: 绑定元素插入父节点时调用。
+2. ==inserted==: 绑定元素插入父节点时调用。
 3. update: 所在组件的VNode更新时调用,不一定发生在子VNode更新之前。
-4. componentUpdated: 指令所在组件的VNode及其子VNode全部更新后调用
-5. unbind: 指令与元素解绑时调用,只会执行一次。
+4. ==componentUpdated==: 指令所在组件的VNode及其子VNode全部更新后调用
+5. ==unbind==: 指令与元素解绑时调用,只会执行一次。
 自动聚焦输入框的指令
 ```js
 Vue.directive('focus', {
@@ -138,6 +77,42 @@ Vue.directive('focus', {
 })
 <input v-focus>
 ```
+Vue3
+```js
+const myDirective = {
+  // 在绑定元素的 attribute 前
+  // 或事件监听器应用前调用
+  created(el, binding, vnode) {
+    // 下面会介绍各个参数的细节
+  },
+  // 在元素被插入到 DOM 前调用
+  beforeMount(el, binding, vnode) {},
+  // 在绑定元素的父组件
+  // 及他自己的所有子节点都挂载完成后调用
+  mounted(el, binding, vnode) {},
+  // 绑定元素的父组件更新前调用
+  beforeUpdate(el, binding, vnode, prevVnode) {},
+  // 在绑定元素的父组件
+  // 及他自己的所有子节点都更新后调用
+  updated(el, binding, vnode, prevVnode) {},
+  // 绑定元素的父组件卸载前调用
+  beforeUnmount(el, binding, vnode) {},
+  // 绑定元素的父组件卸载后调用
+  unmounted(el, binding, vnode) {}
+}
+```
+常用方式：
+```jsx
+<div v-demo="{ color: 'white', text: 'hello!' }"></div>
+app.directive('demo', (el, binding) => {
+  console.log(binding.value.color) // => "white"
+  console.log(binding.value.text) // => "hello!"
+})
+```
+binding 具体内容分参考：
+https://cn.vuejs.org/guide/reusability/custom-directives#hook-arguments
+ID: 1731984145319
+
 #### ANKI-在vue中，如果变量以 `_` 或 `$`开头会有什么问题？如何访问呢
 在Vue中,如果变量名以 或`$`开头,这些变量会被Vue框架认为为是保留属性,不会作为数据代理到Vue实例上,不会出现在`this.$data`对象中。所以,直接通过 this.variableName无法访问这些变量。
 为了访问这些变量,可以通过`this.$data._variableName`或`this.$data.$variableName`的形式访问到这些值。
@@ -172,3 +147,14 @@ ID: 1730965091999
 + `.once`：只会触发一次
 + `.passive`：告诉浏览器不应该阻止默认行为
 ID: 1730965092000
+
+#### ANKI-说下provide，inject 开发的注意事项
+1. 响应式：provide 传递的引用时响应式的。但如果传递的值是基本类型，后代组件对其修改不会反映回组件组件
+2. vue3中的写法和vue2 有出入：
+	```js
+	// 父组件
+	provide('sharedData', 'Hello from Parent');
+	// 子组件
+	const sharedData = inject('sharedData');
+	```
+ID: 1731984510450
