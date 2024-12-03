@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/react/virual-dom/","title":"关于 virtual-dom的知识点","created":"2024-11-11T11:12:32.594+08:00","updated":"2024-11-11T13:49:51.730+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/react/virual-dom/","title":"关于 virtual-dom的知识点","tags":["react","frontend"],"created":"2024-11-11T11:12:32.594+08:00","updated":"2024-12-02T15:01:52.877+08:00"}
 ---
 
 #### ANKI-在React中，当使用数组表示元素的时候，Key 属性有什么用？
