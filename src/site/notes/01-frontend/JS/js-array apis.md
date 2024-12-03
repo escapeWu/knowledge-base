@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/js-array-apis/","title":"js 数组api整理","created":"2024-11-11T14:26:04.309+08:00","updated":"2024-11-13T14:58:20.806+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/js-array-apis/","title":"js 数组api整理","tags":["js","frontend"],"created":"2024-11-11T14:26:04.309+08:00","updated":"2024-12-02T14:55:45.929+08:00"}
 ---
 
 #### ANKI-介绍下数组的splice api
