@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/event-capture-and-event-bubbling/","title":"关于事件代理的知识","created":"2024-11-08T13:37:08.255+08:00","updated":"2024-11-13T13:42:01.713+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/event-capture-and-event-bubbling/","title":"关于事件代理的知识","tags":["js","frontend"],"created":"2024-11-08T13:37:08.255+08:00","updated":"2024-12-02T14:55:17.978+08:00"}
 ---
 
 #### ANKI-什么是事件代理？
@@ -20,3 +20,38 @@ ID: 1731291082793
 事件冒泡就是：当一个元素触发事件时，该事件会从触发事件的目标元素开始向上传递，经过目标元素的父级元素，直到达到根节点（通常是 document 或 window 对象）。
 当元素被触发事件时候，从该元素的根节点开始逐级向下传递到目标元素，最终在触发事件的元素上处理。
 ID: 1731291082794
+
+#### ANKI-绑定事件的元素节点销毁又重新创建,绑定的事件还会生效吗？
+如果将事件绑定在 `body` 上，然后移除了这个 `body` 标签并重新创建一个 `body` 标签，之前绑定在旧 `body` 上的事件不会生效在新的 `body` 上。
+将事件绑定到一个特定的 DOM 元素上时，这个绑定是针对特定的实例。一旦该元素被移除，与之相关的事件处理程序也会与该元素一起被销毁。
+ID: 1732590243196
+
+
+#### ANKI-把事件委托绑定在body上，如何针对性触发不同的子元素？
+1. event.target 对象判断
+```js
+	document.body.addEventListener("click", function (event) {
+	  const target = event.target;
+	  if (target.classList.contains("button1")) {
+	    // 处理按钮 1 的点击事件
+	  } else if (target.classList.contains("button2")) {
+	    // 处理按钮 2 的点击事件
+	  }
+	});
+```
+2. 设置 `data-*` 属性
+```jsx
+<button data-action="action1">Button 1</button> 
+<button data-action="action2">Button 2</button>
+// js body
+document.body.addEventListener("click", function (event) {
+  const target = event.target;
+  if (target.dataset.action === "action1") {
+    // 处理按钮 1 的点击事件
+  } else if (target.dataset.action === "action2") {
+    // 处理按钮 2 的点击事件
+  }
+});
+```
+ID: 1732590243197
+
