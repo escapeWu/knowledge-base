@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/vue/vue-router/","title":"vueRouter 相关知识","created":"2024-11-13T14:23:36.998+08:00","updated":"2024-11-18T10:59:32.174+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/vue/vue-router/","title":"vueRouter 相关知识","tags":["vue","frontend"],"created":"2024-11-13T14:23:36.998+08:00","updated":"2024-12-02T15:05:04.383+08:00"}
 ---
 
 #### ANKI-说下VueRouter 的核心概念？
@@ -13,7 +13,6 @@
 定义：
 全局守卫是作用于整个路由系统的导航守卫，它会在任意路由切换时触发。
 类型：
-
 	•	beforeEach：在每次导航前触发。
 	•	beforeResolve：在所有组件内守卫和异步路由组件解析后触发（Vue Router 3.1+）。
 	•	afterEach：导航完成后触发（无 next 参数）。
@@ -62,7 +61,6 @@ const routes = [
 定义：
 组件内守卫是直接定义在路由组件中的守卫，适用于和组件强相关的逻辑。
 类型：
-
 	•	beforeRouteEnter：组件实例还未创建时调用（不能直接访问 this，可通过回调访问）。
 	•	beforeRouteUpdate：当前路由改变时（路由参数或查询变动，但仍渲染同一组件）。
 	•	beforeRouteLeave：离开当前路由时调用。
@@ -90,4 +88,26 @@ export default {
 适用场景：
 	•	初始化数据：在组件加载前获取数据。
 	•	防止未保存的数据丢失：在离开组件前提示用户保存数据。
-ID: 1731480918182
+ID: 1732514349571
+
+
+
+#### ANKI-vue-router 如何添加 删除动态路由
+使用addRoute，removeRoute方法。
+```js
+const router = new VueRouter({routes: [], ...});
+router.addRoute({
+	path: '/new-route',
+	component: () => import('./components/NewComponents')
+})
+router.removeRoute('newRoute');
+```
+通常用来实现不同用户权限，动态菜单的功能。在beforEach hook中 具体操作如下：
++ 使用beforEach hook
+	+ https://github.com/lyt-Top/vue-next-admin/blob/master/src/router/index.ts#L94
++ 调用后端加载路由
+	+ https://github.com/lyt-Top/vue-next-admin/blob/master/src/router/index.ts#L115
++ 后端加载路由逻辑实现：
+	+ https://github.com/lyt-Top/vue-next-admin/blob/master/src/router/backEnd.ts#L36
+ID: 1731984080914
+
