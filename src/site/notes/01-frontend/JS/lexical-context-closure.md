@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/lexical-context-closure/","title":"javascript 从词法环境角度来解释执行上下文，this指向，以及闭包.","tags":["js","basic"],"created":"2024-09-30T10:50:34.000+08:00","updated":"2024-11-18T10:53:48.602+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/lexical-context-closure/","title":"javascript 从词法环境角度来解释执行上下文，this指向，以及闭包.","tags":["js","basic","frontend"],"created":"2024-09-30T10:50:34.000+08:00","updated":"2024-12-02T14:56:00.526+08:00"}
 ---
 
 原博文地址：[Li Mei](https://limeii.github.io/#blog)
@@ -42,27 +42,6 @@ ID: 1718165561784
 foo函数词法环境里也没有变量a，就接着去foo函数词法环境的上一层（全局词法环境）去找，在全局词法环境里var a=2，
 ![Pasted image 20240612112854.png](/img/user/attachments/Pasted%20image%2020240612112854.png)
 ID: 1718165561786
-
-#### ANKI-什么是执行上下文？
-首先得提到词法环境是什么（参考文首）。
-**类型**：
-+ 全局执行上下文
-+ 函数执行上下文
-+ Eval 执行上下文
-==构成==：
-+ 两个词法环境
-	+ **变量环境组件VariableEnvironment**
-	+ **词法环境组件（LexicalEnvironment）**
-+ this binding
-有人会将 两个词法环境拆解为具体表现组件：
-+ **变量对象**：包含了函数的所有形参，内部变量和函数声明
-+ **作用域链**：用来解析变量，包含当前上下文的变量对象以及所有父级上下文的变量对象
-==**为什么需要两个词法环境？**==
-**变量环境组件VariableEnvironment**: 是用来登记`var` `function`变量声明，
-**词法环境组件（LexicalEnvironment）**:  是用来登记`let` `const` `class`等变量声明，ES6之后补充。
-在ES6之前都没有块级作用域，ES6之后我们可以用`let` `const`来声明块级作用域，有这两个词法环境是==为了实现块级作用域的同时不影响`var`变量声明和函数声明==
-ID: 1718165561788
-
 
 #### ANKI-执行上下文，词法环境与执行栈的关系？
 执行上下文的构成如下：
