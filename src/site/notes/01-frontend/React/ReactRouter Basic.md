@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/react/react-router-basic/","title":"React Router 基础","created":"2024-11-07T15:42:50.685+08:00","updated":"2024-11-11T10:11:24.710+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/react/react-router-basic/","title":"React Router 基础","created":"2024-11-07T15:42:50.685+08:00","updated":"2024-11-11T10:11:24.000+08:00"}
 ---
 
 #### ANKI-React Router 中 路由有哪几种模式
