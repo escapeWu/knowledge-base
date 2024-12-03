@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/utils/imglist-zip/","title":"图片批量压缩下载","tags":["implement"],"created":"2024-10-25T10:23:22.000+08:00","updated":"2024-10-25T10:23:22.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/utils/imglist-zip/","title":"图片批量压缩下载","tags":["implement","frontend","utils"],"created":"2024-10-25T10:23:22.000+08:00","updated":"2024-12-02T15:02:23.546+08:00"}
 ---
 
 ## source code
