@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/vue/vue2-reactive/","title":"Vue2 reactivity 解析","tags":["implement","vue"],"created":"2024-06-04T10:26:05.000+08:00","updated":"2024-06-04T10:26:05.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/vue/vue2-reactive/","title":"Vue2 reactivity 解析","tags":["implement","vue","frontend"],"created":"2024-06-04T10:26:05.000+08:00","updated":"2024-12-02T15:04:22.752+08:00"}
 ---
 
 
