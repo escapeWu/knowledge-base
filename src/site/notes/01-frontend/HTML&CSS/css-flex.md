@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/html-and-css/css-flex/","title":"flex 基础使用","created":"2024-10-23T10:20:48.000+08:00","updated":"2024-10-23T10:20:48.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/html-and-css/css-flex/","title":"flex 基础使用","tags":["css","frontend","flex"],"created":"2024-10-23T10:20:48.000+08:00","updated":"2024-12-02T14:53:04.771+08:00"}
 ---
 
 #### ANKI-flex-grow flex-shrink flex basis 是什么？
