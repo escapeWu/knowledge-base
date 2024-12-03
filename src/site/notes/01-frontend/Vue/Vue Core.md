@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/vue/vue-core/","title":"Vue 深入知识点","created":"2024-11-11T13:50:45.699+08:00","updated":"2024-11-13T14:55:18.205+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/vue/vue-core/","title":"Vue 深入知识点","tags":["vue","frontend"],"created":"2024-11-11T13:50:45.699+08:00","updated":"2024-12-02T15:05:44.118+08:00"}
 ---
 
 #### ANKI-TODO 实现一个简易的DOM Diff
