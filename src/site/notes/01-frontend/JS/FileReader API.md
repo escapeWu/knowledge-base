@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/file-reader-api/","title":"文件常用api 记录","created":"2024-06-04T11:20:09.000+08:00","updated":"2024-06-04T11:20:09.000+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/file-reader-api/","title":"文件常用api 记录","tags":["js","frontend"],"created":"2024-06-04T11:20:09.000+08:00","updated":"2024-12-02T14:55:34.713+08:00"}
 ---
 
 #frontend #browser #FileReader
