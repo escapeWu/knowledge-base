@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/ways-to-create-object/","title":"JS创建对象的方式有哪些？","created":"2024-11-11T14:14:58.893+08:00","updated":"2024-11-11T14:25:45.661+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/ways-to-create-object/","title":"JS创建对象的方式有哪些？","tags":["js","frontend"],"created":"2024-11-11T14:14:58.893+08:00","updated":"2024-12-02T14:56:23.244+08:00"}
 ---
 
 #### ANKI-JS创建对象的方式有哪些？
