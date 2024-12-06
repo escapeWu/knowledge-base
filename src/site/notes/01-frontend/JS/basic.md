@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/js/basic/","title":"JS 基础","tags":["js","basic"],"created":"2024-10-25T11:28:42.000+08:00","updated":"2024-12-02T14:54:37.773+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/js/basic/","title":"JS 基础","tags":["js","basic"],"created":"2024-10-25T11:28:42.000+08:00","updated":"2024-12-06T14:57:02.252+08:00"}
 ---
 
 
@@ -147,9 +147,11 @@ undefined 介绍
 ID: 1729763764384
 
 
-#### Object.is 和 === 的区别是什么？
+#### ANKI-Object.is 和 === 的区别是什么？
 + Object.is：-0 和 +0不相等，两个NaN相等
 + `===`: -0 和 +0 相等，NaN不相等 
+ID: 1733288801027
+
 
 #### ANKI-+0和-0的区别
 **除法操作**：
@@ -233,3 +235,5 @@ ID: 1732527140436
 #### ANKI-Corejs 和 Polyfill的关系
 **CoreJs 是 Polyfill 的一种实现方式**：Polyfill 是一个术语，用于描述一段代码，它提供了浏览器中缺失的功能。CoreJs 可以看作是一种全面的 Polyfill 库。当浏览器不支持某个 JavaScript 特性时，CoreJs 可以通过添加相应的代码来模拟该特性，就像填充了浏览器功能的空缺一样。例如，对于`Object.assign`方法，如果浏览器不支持，CoreJs 可以提供一个自定义的函数来实现相同的功能，这个自定义函数就是一种 Polyfill。
 ID: 1732591282597
+
+
