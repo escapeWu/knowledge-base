@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/network/cdn-tech/","title":"cdn相关技术","created":"2024-06-04T11:20:59.000+08:00","updated":"2024-11-26T11:21:22.618+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/network/cdn-tech/","title":"cdn相关技术","created":"2024-06-04T11:20:59.000+08:00","updated":"2024-12-04T09:35:21.948+08:00"}
 ---
 
 #### ANKI-什么是CDN
@@ -31,7 +31,7 @@ ID: 1717469946251
 
 #### ANKI-CDN是如何决策请求的？
 1. DNS解析引导：将用户的请求，导向到离用户最近的CDN服务器
-2. anycast 服务器ip共享：Anycast技术允许多个服务器共享一个单一的IP地址，当客户端向该IP地址发出请求时，路由协议会根据距离、延迟或网络负载等因素，将请求自动引导到最优的服务器节点。
+2. anycast 服务器ip共享：Anycast 是一种网络寻址和路由方法，允许多个节点共享一个 IP 地址。使用 Anycast 技术，可以将流量请求路由到就近节点中
 3. 负载均衡
 4. 资源缓存
 ID: 1732591282590
