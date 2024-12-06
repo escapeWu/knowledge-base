@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/vue/vue-slot/","title":"vue slot","tags":["vue","frontend"],"created":"2024-11-22T10:22:11.419+08:00","updated":"2024-12-02T15:04:55.844+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/vue/vue-slot/","title":"vue slot","tags":["vue","frontend"],"created":"2024-11-22T10:22:11.419+08:00","updated":"2024-12-04T13:06:41.112+08:00"}
 ---
 
 #### ANKI-vue slot 的类型
@@ -64,3 +64,5 @@
 </MyComponent>
 ```
 ![Pasted image 20241030142317.png](/img/user/attachments/Pasted%20image%2020241030142317.png)
+ID: 1733288801020
+
