@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-frontend/vue/vue-keep-alive/","title":"vue keep-alive使用","tags":["vue","frontend"],"created":"2024-11-19T09:55:16.105+08:00","updated":"2024-12-02T15:05:22.394+08:00"}
+{"dg-publish":true,"permalink":"/01-frontend/vue/vue-keep-alive/","title":"vue keep-alive使用","tags":["vue","frontend"],"created":"2024-11-19T09:55:16.105+08:00","updated":"2024-12-04T09:23:29.690+08:00"}
 ---
 
 #### ANKI-vue keep-alive是什么？ 有哪些知识点需要注意？
@@ -26,7 +26,7 @@
 		</KeepAlive>
 		```
 + 生命周期：
-	+ onActivated：会在 首次挂载，每次从缓存中被重新插入时触发
+	+ onActivated `/ˈaktɪveɪt/`：会在 首次挂载，每次从缓存中被重新插入时触发
 	+ onDeactivated：从DOM上移除，被加入缓存。以及组件卸载时调用
 ID: 1731982131618
 
