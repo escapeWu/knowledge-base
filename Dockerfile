@@ -1,5 +1,5 @@
 # 使用官方 Nginx 镜像
-FROM nginx:latest
+FROM docker.imwsc.com/nginx:latest
 
 # 删除默认的 Nginx 配置文件
 RUN rm /etc/nginx/conf.d/default.conf
