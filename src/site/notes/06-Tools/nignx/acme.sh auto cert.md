@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/06-tools/nignx/acme-sh-auto-cert/","title":"使用acme.sh，域名自动证书更新","created":"2024-11-27T15:08:36.874+08:00","updated":"2024-11-27T16:13:45.684+08:00"}
+{"dg-publish":true,"permalink":"/06-tools/nignx/acme-sh-auto-cert/","title":"使用acme.sh，域名自动证书更新","created":"2024-11-27T15:08:36.874+08:00","updated":"2024-12-10T13:47:50.618+08:00"}
 ---
 
 >我们目标是对 泛域名 增加Https的支持，以 `*.dev.hithinksoft.com`为例，并使用了阿里云dns
@@ -33,9 +33,9 @@ https://github.com/acmesh-official/acme.sh/wiki/dnsapi#11-use-aliyun-domain-api-
 ### 3. 复制证书到指定目录
 我希望将证书复制到 ~/master-proxy/cert 目录，操作如下（注意`''`包裹域名）：
 ```bash
-acme.sh --install-cert -d '*.dev.hithinksoft.com' \
---key-file        ~/master-proxy/cert/key.pem  \
---fullchain-file  ~/master-proxy/cert/cert.pem \
+acme.sh --install-cert -d 'dockerproxy.hithinksoft.com' \
+--key-file        ~/dockerproxy-ssl/cert/key.pem  \
+--fullchain-file  ~/dockerproxy-ssl/cert/cert.pem \
 --reloadcmd     "service nginx reload"
 ```
 ### 4. 设置ssl 配置
@@ -73,3 +73,4 @@ server {
     }
 }
 ```
+
